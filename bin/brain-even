@@ -1,0 +1,9 @@
+<?php
+
+function game($number)
+{
+    if ($number % 2 === 0) {
+    return 'Correct!';
+    }
+    
+}
