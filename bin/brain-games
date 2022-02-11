@@ -8,5 +8,5 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use Brain\Games\Cli;
+namespace Brain\Games\Cli;
 echo "Welcome to the Brain Games!";
