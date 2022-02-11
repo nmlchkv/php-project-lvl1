@@ -9,4 +9,5 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 use Brain\Games\brain\Cli;
-echo "Welcome to the Brain Games! //n/ Answer "/yes"/ if the number is even, otherwise answer "/no"/.";
+echo "Welcome to the Brain Games! Answer "/yes"/ if the number is even, otherwise answer "/no"/.";
+use Brain\Games\brain\Cli;
