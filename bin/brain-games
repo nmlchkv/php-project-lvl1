@@ -8,6 +8,6 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-
+use Brain\Games\brain\Cli;
 echo "Welcome to the Brain Games!";
 use Brain\Games\brain\even;
