@@ -1,4 +1,5 @@
 #!/usr/bin/env php
 <?php
 namespace Brain\Games\brain\even;
+use Brain\Games\brain\Cli;
 echo "Answer \"yes\" if the number is even, otherwise answer \"no\".";
