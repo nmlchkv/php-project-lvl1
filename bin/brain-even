@@ -10,4 +10,4 @@ if (file_exists($autoloadPath1)) {
 }
 use Brain\Games\brain\Cli;
 echo "Welcome to the Brain Games!";
-use Brain\Games\brain\Cli;
+
