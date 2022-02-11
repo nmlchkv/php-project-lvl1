@@ -2,4 +2,4 @@
 
 <?php
 
-use Brain\Games;
+use Brain\Games\Cli;
