@@ -1,4 +1,4 @@
 #!/usr/bin/env php
 <?php
 
-use Brain\Games\Cli;
+use Brain\Games;
