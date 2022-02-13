@@ -8,6 +8,7 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-
-use Brain\Games\Cli;
-echo 'Answer "yes" if the number is even, otherwise answer "no".';
+    use function cli\line;
+    use function cli\prompt;
+    use Brain\Games\Cli;
+    $num = prompt('Answer "yes" if the number is even, otherwise answer "no".');
