@@ -17,8 +17,7 @@ if (file_exists($autoloadPath1)) {
     $question = prompt('Your answer');
     if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
         line('Correct!');
-    }
-    if ($num % 2 !== 0 && $question === 'yes' || $num % 2 === 0 && $question === 'no') {
+    }  else {
         line("'yes' is wrong answer ;(. Correct answer was 'no'.
         Let's try again, $name");
     }
