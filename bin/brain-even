@@ -14,4 +14,4 @@ if (file_exists($autoloadPath1)) {
     line('Answer "yes" if the number is even, otherwise answer "no".');
     $num = rand(1, 15);
     line('Question: ' . $num);
-    $question = prompt('Your answer:');
+    $question = prompt('Your answer');
