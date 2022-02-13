@@ -10,4 +10,4 @@ if (file_exists($autoloadPath1)) {
 }
 
 use Brain\Games\Cli;
-echo "Answer "\yes"\ if the number is even, otherwise answer "\no"\.";
+echo "Answer "yes\" if the number is even, otherwise answer "no\".";
