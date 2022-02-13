@@ -11,4 +11,5 @@ if (file_exists($autoloadPath1)) {
     use function cli\line;
     use function cli\prompt;
     use Brain\Games\Cli;
-    $num = prompt('Answer "yes" if the number is even, otherwise answer "no".');
+    line('Answer "yes" if the number is even, otherwise answer "no".');
+    line('Question:', rand(1, 15));
