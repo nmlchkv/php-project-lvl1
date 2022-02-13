@@ -16,5 +16,5 @@ if (file_exists($autoloadPath1)) {
     line('Question: ' . $num);
     $question = prompt('Your answer');
     if ($question === 'yes') {
-        print_r('1');   
+        line('1');   
     }
