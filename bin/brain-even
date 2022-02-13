@@ -19,6 +19,6 @@ if (file_exists($autoloadPath1)) {
         line('Correct!');
     }
     if ($num % 2 !== 0 && $question === 'yes' || $num % 2 === 0 && $question === 'no') {
-        line("'yes' is wrong answer ;(. Correct answer was 'no'./n
-        Let's try again, %s!");
+        line("'yes' is wrong answer ;(. Correct answer was 'no'.
+        Let's try again, $name");
     }
