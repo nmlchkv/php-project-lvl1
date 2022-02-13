@@ -15,8 +15,6 @@ if (file_exists($autoloadPath1)) {
     $num = rand(1, 15);
     line('Question: ' . $num);
     $question = prompt('Your answer');
-    function answer($question)
-    {
-        if ($question === 'yes') {
-            print_r ('1');
-    };
+    if ($question === 'yes') {
+        print_r('1');   
+    }
