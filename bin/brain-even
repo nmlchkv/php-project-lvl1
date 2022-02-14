@@ -12,7 +12,6 @@ if (file_exists($autoloadPath1)) {
     use function cli\prompt;
     use Brain\Games\Cli;
     line('Answer "yes" if the number is even, otherwise answer "no".');
- 
             $num = rand(1, 15);
             line('Question: ' . $num);
             $question = prompt('Your answer');
@@ -27,17 +26,9 @@ if (file_exists($autoloadPath1)) {
                     line('Question: ' . $num);
                     $question = prompt('Your answer');
                  }                 if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
-                    line('Correct!');
-                    $num = rand(1, 15);
-                    line('Question: ' . $num);
-                    $question = prompt('Your answer');
-                 }                 if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
                     line('Congratulations, %s!', $name);
-
-                 } 
-
-                 else {
-                line("'yes' is wrong answer ;(. Correct answer was 'no'.
+                 } else {
+            line("'yes' is wrong answer ;(. Correct answer was 'no'.
             Let's try again, %s!", $name);
             }
         
