@@ -10,7 +10,7 @@ if (file_exists($autoloadPath1)) {
 }
     use function cli\line;
     use function cli\prompt;
-
+    require_once 'Cli.php';
     line('Answer "yes" if the number is even, otherwise answer "no".');
     $num = rand(1, 15);
     line('Question: ' . $num);
