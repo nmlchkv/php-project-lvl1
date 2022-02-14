@@ -1,15 +1,11 @@
 #!/usr/bin/env php
 <?php
-$autoloadPath1 = __DIR__ . '/../../../autoload.php';
-$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
-$name = __DIR__ . '/src/Cli.php';
-if (file_exists($autoloadPath1)) {
-    require_once $autoloadPath1;
-} else {
-    require_once $autoloadPath2;
-}
+
     use function cli\line;
     use function cli\prompt;
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line('Answer "yes" if the number is even, otherwise answer "no".');
     $num = rand(1, 15);
     line('Question: ' . $num);
