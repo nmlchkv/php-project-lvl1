@@ -2,7 +2,7 @@
 <?php
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
-
+$name = __DIR__ . '/../src/Cli.php';
 if (file_exists($autoloadPath1)) {
     require_once $autoloadPath1;
 } else {
@@ -10,14 +10,13 @@ if (file_exists($autoloadPath1)) {
 }
     use function cli\line;
     use function cli\prompt;
-    require_once 'Cli.php';
     line('Answer "yes" if the number is even, otherwise answer "no".');
     $num = rand(1, 15);
     line('Question: ' . $num);
     $question = prompt('Your answer');
-    if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
+if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
         line('Correct!');
-    }  else {
+} else {
         line("'yes' is wrong answer ;(. Correct answer was 'no'.
         Let's try again, $name!");
-    }
+}
