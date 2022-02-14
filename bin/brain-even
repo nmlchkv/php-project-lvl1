@@ -12,7 +12,7 @@ if (file_exists($autoloadPath1)) {
     use function cli\prompt;
     use Brain\Games\Cli;
     line('Answer "yes" if the number is even, otherwise answer "no".');
-        for($i = 0; $i > 3; $i++) {
+        for($i = 0; $i === 3; $i++) {
             $num = rand(1, 15);
             line('Question: ' . $num);
             $question = prompt('Your answer');
