@@ -6,7 +6,7 @@
         ],
         "autoload": {
             "psr-4": {
-            "Hexlet\\Code\\": "src/"
+            "php\\project-lvl1\\": "src"
         },
             "files": [
             "src/Cli.php"
