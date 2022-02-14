@@ -15,8 +15,14 @@ if (file_exists($autoloadPath1)) {
     $num = rand(1, 15);
     line('Question: ' . $num);
     $question = prompt('Your answer');
+    $result = 0;
 if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
-        line('Correct!');
+        $result += 1;
+        if ($result === 3) {
+            line("Congratulations, %s!", $name);
+        } else {
+            $question = prompt('Your answer');
+        }
 } else {
         line("'yes' is wrong answer ;(. Correct answer was 'no'.
         Let's try again, %s!", $name);
