@@ -15,29 +15,19 @@ if (file_exists($autoloadPath1)) {
             $num = rand(1, 15);
             line('Question: ' . $num);
             $question = prompt('Your answer');
-                if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
+if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
                     line('Correct!');
                     $num = rand(1, 15);
                     line('Question: ' . $num);
                     $question = prompt('Your answer');
-                 }                 if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
+} if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
                     line('Correct!');
                     $num = rand(1, 15);
                     line('Question: ' . $num);
                     $question = prompt('Your answer');
-                 }                 if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
+} if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
                     line('Congratulations, %s!', $name);
-                 } else {
+} else {
             line("'yes' is wrong answer ;(. Correct answer was 'no'.
             Let's try again, %s!", $name);
-            }
-        
-            
-    
-
-        
-
-    
-
-
-    
+}
