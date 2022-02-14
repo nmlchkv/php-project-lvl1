@@ -26,7 +26,6 @@ if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no
                     line('Question: ' . $num);
                     $question = prompt('Your answer');
 } if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no') {
-                    use Brain\Games\Cli as $name;
                     line('Congratulations, %s!', $name);
 } else {
             line("'yes' is wrong answer ;(. Correct answer was 'no'.
