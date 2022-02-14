@@ -24,9 +24,7 @@ if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no
         line('Correct!');
         if ($result === 3) {
             line("Congratulations, %s!", $name);
-        } else {
-            use function question;
-        }
+        
 } else {
         line("'yes' is wrong answer ;(. Correct answer was 'no'.
         Let's try again, %s!", $name);
