@@ -29,5 +29,5 @@ if ($num % 2 === 0 && $question === 'yes' || $num % 2 !== 0 && $question === 'no
                     line('Congratulations, %s!', $name);
 } else {
             line("'yes' is wrong answer ;(. Correct answer was 'no'.
-            Let's try again, $name!");
+            Let's try again, %s!", $name);
 }
