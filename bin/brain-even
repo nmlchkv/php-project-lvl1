@@ -21,11 +21,13 @@ if (file_exists($autoloadPath1)) {
                     
                  } if ($i === 3) {
                         line("Congratulations, %s!", $name);
-                    
-            } 
-        } 
-            line("'yes' is wrong answer ;(. Correct answer was 'no'.
+                        continue;
+            } else {
+                line("'yes' is wrong answer ;(. Correct answer was 'no'.
             Let's try again, %s!", $name);
+            }
+        } 
+            
     
 
         
