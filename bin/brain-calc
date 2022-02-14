@@ -12,7 +12,7 @@ if (file_exists($autoloadPath1)) {
     use function cli\prompt;
     use Brain\Games\Cli;
     line('What is the result of the expression?');
-    $operation = array_rand[+, -, *];
+    $operation = array_rand['+', '-', '*'];
     $rand1 = rand(1, 15);
     $rand2 = rand(1, 15);
     line('Question: ' . $rand1 . $operation . $rand2);
