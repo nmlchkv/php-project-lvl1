@@ -17,8 +17,8 @@ if (file_exists($autoloadPath1)) {
     $arrayOperator = ['-', '+', '*'];
     $keyOperator = rand(0, 2);
     $operator = $arrayOperator[$keyOperator];
-    $num1 = rand(1, 15);
-    $num2 = rand(1, 15);
+    $num1 = rand(1, 10);
+    $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
 switch ($operator) {
@@ -36,8 +36,8 @@ switch ($operator) {
     $arrayOperator = ['-', '+', '*'];
     $keyOperator = rand(0, 2);
     $operator = $arrayOperator[$keyOperator];
-    $num1 = rand(1, 15);
-    $num2 = rand(1, 15);
+    $num1 = rand(1, 10);
+    $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
 }
@@ -56,8 +56,8 @@ line("Correct!");
     $arrayOperator = ['-', '+', '*'];
     $keyOperator = rand(0, 2);
     $operator = $arrayOperator[$keyOperator];
-    $num1 = rand(1, 15);
-    $num2 = rand(1, 15);
+    $num1 = rand(1, 10);
+    $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
 }
