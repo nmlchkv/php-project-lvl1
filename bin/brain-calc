@@ -1,3 +1,5 @@
+14 lines (13 sloc)  377 Bytes
+   
 #!/usr/bin/env php
 <?php
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
@@ -11,4 +13,3 @@ if (file_exists($autoloadPath1)) {
     use function cli\prompt;
     use Brain\Games\Cli;
     line('What is the result of the expression?');
-  
