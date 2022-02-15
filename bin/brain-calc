@@ -11,35 +11,11 @@ if (file_exists($autoloadPath1)) {
     use function cli\prompt;
     use Brain\Games\Cli;
     line('What is the result of the expression?');
-    functuin operacion() {
-        $num1 = rand(1, 15);
-        $num2 = rand(1, 15);
-        $arrayOperator = ['-', '+', '*'];
-        $keyOperator = rand(0, 2);
-        $operator = $arrayOperator[$keyOperator];
-        line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
-        $question = prompt('Your answer');
-        $result = 0;
-    switch ($operator) {
-        case '+':
-            $answer =  $num1 + $num2;
-            break;
-        case '*':
-            $answer = $num1 * $num2;
-            break;
-        case '-':
-            $answer = $num1 - $num2;  
-            break;
+    $arrayOperator = ['-', '+', '*'];
+    $keyOperator = rand(0, 2);
+    $operator = $arrayOperator[$keyOperator];
+    functuin operacion($operator) {
+        if ($operator == '*') {
+            line('lol');
         }
-    if ($result === 3) {
-        line("Congratulations, $name!");
-    }
-    } if ($answer == $question) {
-        line("Correct!");
-        $result += 1;
-        return operacion();
-    } else {
-        line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
-        Let's try again, !");
-    }
 }
