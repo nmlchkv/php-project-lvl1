@@ -74,6 +74,7 @@ switch ($operator) {
 } if ($answer == $question) {
     line("Congratulations, %s!', $name");
 } else {
+    use Brain\Games\Cli as $name;
     line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
 Let's try again, %s!', $name");
 }
