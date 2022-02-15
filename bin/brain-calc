@@ -29,14 +29,8 @@ switch ($operator) {
     case '-':
         $answer = $num1 - $num2;  
         break;
-    }
-if ($result === 3) {
-    line("Congratulations, $name!");
-}
 } if ($answer == $question) {
     line("Correct!");
-    $result += 1;
-    return operacion($operator);
 } else {
     line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
     Let's try again, !");
