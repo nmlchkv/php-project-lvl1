@@ -18,6 +18,10 @@ if (file_exists($autoloadPath1)) {
     line('Question: ' . $num1 . ' ' . $operator[$keyOperator] . ' ' . $num2);
     $question = prompt('Your answer');
     $key = rand(0, 2)
+     
+    function doSomethingGood($key)
+{
+    $result = 0;
     switch ($key) {
         case 0:
             $answer =  $num1 + $num2;
@@ -26,5 +30,11 @@ if (file_exists($autoloadPath1)) {
         case 2:
             $answer = $num1 - $num2;    
     } if ($answer === $question) {
-        line('Correct!');
+        $result += 1;
+    } else {
+        line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
+        Let's try again, $name!");
     }
+    line('Correct!');
+}
+    
