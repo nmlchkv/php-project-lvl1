@@ -13,9 +13,10 @@ if (file_exists($autoloadPath1)) {
     line('What is the result of the expression?');
     $num1 = rand(1, 15);
     $num2 = rand(1, 15);
-    $operator = ['-', '+', '*'];
+    $arrayOperator = ['-', '+', '*'];
     $keyOperator = rand(0, 2);
-    line('Question: ' . $num1 . ' ' . $operator[$keyOperator] . ' ' . $num2);
+    $operator = $arrayOperator[$keyOperator];
+    line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
     switch ($operator) {
         case '+':
@@ -28,7 +29,7 @@ if (file_exists($autoloadPath1)) {
         line('Correct!');
     } else {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
-        Let's try again, $name!");
+        Let's try again, !");
     }
     
 
