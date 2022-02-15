@@ -21,13 +21,13 @@ if (file_exists($autoloadPath1)) {
 switch ($operator) {
     case '+':
         $answer =  $num1 + $num2;
-        continue;
+        break;
     case '*':
         $answer = $num1 * $num2;
-        continue;
+        break;
     case '-':
         $answer = $num1 - $num2;  
-        continue;
+        break;
 } if ($answer == $question) {
     line("Correct!");
 $arrayOperator = ['-', '+', '*'];
@@ -41,13 +41,13 @@ $question = prompt('Your answer');
 switch ($operator) {
 case '+':
     $answer =  $num1 + $num2;
-    continue;
+    break;
 case '*':
     $answer = $num1 * $num2;
-    continue;
+    break;
 case '-':
     $answer = $num1 - $num2;  
-    continue;
+    break;
 } if ($answer == $question) {
 line("Correct!");
 $arrayOperator = ['-', '+', '*'];
