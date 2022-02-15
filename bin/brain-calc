@@ -18,7 +18,6 @@ if (file_exists($autoloadPath1)) {
     $num2 = rand(1, 15);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
-    $result = 0;
 switch ($operator) {
     case '+':
         $answer =  $num1 + $num2;
@@ -34,4 +33,50 @@ switch ($operator) {
 } else {
     line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
     Let's try again, !");
+}
+$arrayOperator = ['-', '+', '*'];
+$keyOperator = rand(0, 2);
+$operator = $arrayOperator[$keyOperator];
+$num1 = rand(1, 15);
+$num2 = rand(1, 15);
+line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
+$question = prompt('Your answer');
+switch ($operator) {
+case '+':
+    $answer =  $num1 + $num2;
+    break;
+case '*':
+    $answer = $num1 * $num2;
+    break;
+case '-':
+    $answer = $num1 - $num2;  
+    break;
+} if ($answer == $question) {
+line("Correct!");
+} else {
+line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
+Let's try again, !");
+}
+$arrayOperator = ['-', '+', '*'];
+$keyOperator = rand(0, 2);
+$operator = $arrayOperator[$keyOperator];
+$num1 = rand(1, 15);
+$num2 = rand(1, 15);
+line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
+$question = prompt('Your answer');
+switch ($operator) {
+case '+':
+    $answer =  $num1 + $num2;
+    break;
+case '*':
+    $answer = $num1 * $num2;
+    break;
+case '-':
+    $answer = $num1 - $num2;  
+    break;
+} if ($answer == $question) {
+line(("Congratulations, %s!', $name");
+} else {
+line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
+Let's try again, !");
 }
