@@ -28,7 +28,7 @@ if (file_exists($autoloadPath1)) {
         case '-':
             $answer = $num1 - $num2;  
             break;  
-    } if (int ($answer) === int($question)) {
+    } if ($answer == $question) {
         line('Correct!');
     } else {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
