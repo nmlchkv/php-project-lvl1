@@ -1,5 +1,5 @@
 <?php
-  namespace Brain\Games\Cli;
+  namespace src\cli;
   use function cli\line;
   use function cli\prompt;
   line('Welcome to the Brain Game!');
