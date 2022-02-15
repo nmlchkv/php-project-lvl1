@@ -18,4 +18,4 @@ if (file_exists($autoloadPath1)) {
         if ($operator == '*') {
             line('lol');
         }
-}
+    }
