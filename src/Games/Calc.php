@@ -65,7 +65,7 @@ namespace src\games\calc;
             $answer = $num1 - $num2;
             break;
     } if ($answer == $question) {
-        line("Congratulations, %s!', $name");
+        line("Congratulations, %s!", $name);
     } else {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
     Let's try again, %s!', $name");
