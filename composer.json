@@ -13,6 +13,7 @@
         },
             "files": [
             "src/Cli.php"
+            "src/Games/Calc.php"
         ]
     },
         "authors": [
