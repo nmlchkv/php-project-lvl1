@@ -13,7 +13,8 @@
         },
             "files": [
             "src/Games/Calc.php",
-            "src/Games/Even.php"
+            "src/Games/Even.php",
+            "src/Games/Engine.php"
         ]
     },
         "authors": [
