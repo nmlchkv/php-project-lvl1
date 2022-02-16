@@ -21,3 +21,5 @@ if (file_exists($autoloadPath1)) {
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
     use src\games\even as opercaion;
+    use src\games\even as opercaion;
+    use src\games\even as opercaion;
