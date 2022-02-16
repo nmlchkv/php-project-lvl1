@@ -1,4 +1,4 @@
 <?php
 
 
-use src\games\even;
+use function src\games\even;
