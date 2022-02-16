@@ -5,7 +5,7 @@ namespace src\games\calc;
 use function cli\line;
 use function cli\prompt;
 use function src\engine;
-
+function operacion () {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
@@ -71,5 +71,6 @@ switch ($operator) {
         line("Congratulations, %s!", $name);
 } else {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
-    Let's try again, %s!', $name");
+    Let's try again, %s!", $name);
+}
 }
