@@ -9,7 +9,7 @@
             "psr-4": {
             "php\\project\\lvl1\\": "src",
             "php\\project\\lvl1\\": "bin",
-            "php\\project\\lvl1\\": "src/Games"
+            "php\\project\\lvl1\\src\\": "src/Games"
         },
             "files": [
             "src/Cli.php",
