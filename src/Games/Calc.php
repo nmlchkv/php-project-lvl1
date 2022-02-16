@@ -14,7 +14,6 @@ use function src\engine;
     $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
-    $user = src\engine($name);
 switch ($operator) {
     case '+':
         $answer =  $num1 + $num2;
