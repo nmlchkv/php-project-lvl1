@@ -1,7 +1,2 @@
-
-
 <?php
-
-
-
-    use function src\games\calc;
+    use src\games\calc;
