@@ -16,13 +16,14 @@ namespace src\games\calc;
     $question = prompt('Your answer');
 switch ($operator) {
     case '+':
-break;
+        $answer =  $num1 + $num2;
+            break;
     case '*':
-            $answer = $num1 * $num2;
-break;
+        $answer = $num1 * $num2;
+            break;
     case '-':
-            $answer = $num1 - $num2;
-break;
+        $answer = $num1 - $num2;
+            break;
 } if ($answer == $question) {
         line("Correct!");
         $arrayOperator = ['-', '+', '*'];
@@ -35,14 +36,14 @@ break;
     }
 switch ($operator) {
     case '+':
-            $answer =  $num1 + $num2;
-break;
+        $answer =  $num1 + $num2;
+            break;
     case '*':
-            $answer = $num1 * $num2;
-break;
+        $answer = $num1 * $num2;
+            break;
     case '-':
-            $answer = $num1 - $num2;  
-break;
+        $answer = $num1 - $num2;  
+            break;
 } if ($answer == $question) {
     line("Correct!");
         $arrayOperator = ['-', '+', '*'];
@@ -55,14 +56,14 @@ break;
     }
 switch ($operator) {
     case '+':
-            $answer =  $num1 + $num2;
-break;
+        $answer =  $num1 + $num2;
+            break;
     case '*':
-            $answer = $num1 * $num2;
-break;
+        $answer = $num1 * $num2;
+            break;
     case '-':
-            $answer = $num1 - $num2;
-break;
+        $answer = $num1 - $num2;
+            break;
 } if ($answer == $question) {
         line("Congratulations, %s!", $name);
 } else {
