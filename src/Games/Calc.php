@@ -1,6 +1,6 @@
 <?php
-namespace src\games\calc;
 
+namespace src\games\calc;
     use function cli\line;
     use function cli\prompt;
     line('Welcome to the Brain Game!');
@@ -33,7 +33,7 @@ switch ($operator) {
         $num2 = rand(1, 10);
         line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
         $question = prompt('Your answer');
-    }
+}
 switch ($operator) {
     case '+':
         $answer =  $num1 + $num2;
@@ -42,7 +42,7 @@ switch ($operator) {
         $answer = $num1 * $num2;
             break;
     case '-':
-        $answer = $num1 - $num2;  
+        $answer = $num1 - $num2;
             break;
 } if ($answer == $question) {
     line("Correct!");
@@ -53,7 +53,7 @@ switch ($operator) {
         $num2 = rand(1, 10);
         line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
         $question = prompt('Your answer');
-    }
+}
 switch ($operator) {
     case '+':
         $answer =  $num1 + $num2;
@@ -69,4 +69,4 @@ switch ($operator) {
 } else {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
     Let's try again, %s!', $name");
-    }
+}
