@@ -11,7 +11,6 @@ namespace src\games\calc;
     $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
-function operacion ($operator) {
     switch ($operator) {
         case '+':
             $answer =  $num1 + $num2;
@@ -68,4 +67,4 @@ function operacion ($operator) {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
     Let's try again, %s!', $name");
     }
-}
+
