@@ -2,7 +2,9 @@
 namespace src\games\even;
 use function cli\line;
 use function cli\prompt;
-
+line('Welcome to the Brain Game!');
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
 line('Answer "yes" if the number is even, otherwise answer "no".');
         $num = rand(1, 15);
         line('Question: ' . $num);

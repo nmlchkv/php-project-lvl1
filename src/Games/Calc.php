@@ -3,6 +3,9 @@ namespace src\games\calc;
 
     use function cli\line;
     use function cli\prompt;
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
     line('What is the result of the expression?');
     $arrayOperator = ['-', '+', '*'];
     $keyOperator = rand(0, 2);
