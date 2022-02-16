@@ -12,7 +12,14 @@ if (file_exists($autoloadPath1)) {
 }
     use function cli\line;
     use function cli\prompt;
-    
+    line('What is the result of the expression?');
+    $arrayOperator = ['-', '+', '*'];
+    $keyOperator = rand(0, 2);
+    $operator = $arrayOperator[$keyOperator];
+    $num1 = rand(1, 10);
+    $num2 = rand(1, 10);
+    line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
+    $question = prompt('Your answer');
 function operacion ($operator) {
     switch ($operator) {
         case '+':
