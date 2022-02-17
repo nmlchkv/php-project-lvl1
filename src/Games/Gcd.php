@@ -18,21 +18,19 @@ function operacion ()
     $num = gcd($num1, $num2);
     if ($num == $question) {
         line('Correct!');
-    }
-    $num1 = rand(1, 10);
-    $num2 = rand(1, 10);
-    line('Question: ' . $num1 . ' ' . $num2);
-    $question = prompt('Your answer');
-    $num = gcd($num1, $num2);
-    if ($num == $question) {
+        $num1 = rand(1, 10);
+        $num2 = rand(1, 10);
+        line('Question: ' . $num1 . ' ' . $num2);
+        $question = prompt('Your answer');
+        $num = gcd($num1, $num2);
+    } if ($num == $question) {
         line('Correct!');
-    }
-    $num1 = rand(1, 10);
-    $num2 = rand(1, 10);
-    line('Question: ' . $num1 . ' ' . $num2);
-    $question = prompt('Your answer');
-    $num = gcd($num1, $num2);
-    if ($num == $question) {
+        $num1 = rand(1, 10);
+        $num2 = rand(1, 10);
+        line('Question: ' . $num1 . ' ' . $num2);
+        $question = prompt('Your answer');
+        $num = gcd($num1, $num2);
+    } if ($num == $question) {
         line("Congratulations, $name!");
     } else {
         line("'$question' is wrong answer ;(. Correct answer was '$num'.
