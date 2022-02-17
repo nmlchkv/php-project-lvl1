@@ -16,7 +16,7 @@ function operacion ()
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
     function gcd($num1, $num2) {
-        $num = ((($a % $b) ? gcd($b,$a % $b) : $b));
+        $num = ((($num1 % $num2) ? gcd($num2,$num1 % $num2) : $num2));
         if ($num == $question) {
             line('Correct!');
         }
