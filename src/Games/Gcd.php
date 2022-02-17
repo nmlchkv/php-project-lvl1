@@ -18,5 +18,5 @@ function operacion ()
     $num = $num1 < $num2 ? $num1 : $num2;
     $gcd = (gmp_gcd($num1, $num2));
     line (gmp_strval($gcd));
-    }
+    
 }
