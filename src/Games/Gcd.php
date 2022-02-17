@@ -5,7 +5,8 @@ namespace src\games\gcd;
 use function cli\line;
 use function cli\prompt;
 use function src\engine;
-
+function operacion ()
+{
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
@@ -15,6 +16,8 @@ use function src\engine;
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
     $num = $num1 < $num2 ? $num1 : $num2;
-    $gcd = (gmp_gcd($num1, $num2));
-    line (gmp_strval($gcd));
-    
+    function gcd($num1, $num2) {
+        $num = ((($a % $b) ? gcd($b,$a % $b) : $b));
+        line($num);
+    }
+} 
