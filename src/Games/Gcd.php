@@ -21,6 +21,7 @@ function operacion ()
     } else {
         line("'$question' is wrong answer ;(. Correct answer was '$num'.
         Let's try again, $name!");
+        break;
     }
     $num1 = rand(1, 10);
     $num2 = rand(1, 10);
@@ -32,6 +33,7 @@ function operacion ()
     } else {
         line("'$question' is wrong answer ;(. Correct answer was '$num'.
         Let's try again, $name!");
+        break;
     }
     $num1 = rand(1, 10);
     $num2 = rand(1, 10);
