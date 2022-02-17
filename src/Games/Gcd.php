@@ -4,7 +4,6 @@ namespace src\games\gcd;
 
 use function cli\line;
 use function cli\prompt;
-use function src\engine;
 use function src\engine\gcd;
 function operacion ()
 {
@@ -22,6 +21,4 @@ function operacion ()
     } else {
         line('false');
     }
-    
-    
 } 
