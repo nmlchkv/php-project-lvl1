@@ -15,4 +15,9 @@ function operacion ()
     $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
+    $num = $num1 < $num2 ? $num1 : $num2;
+    $gcd = gmp_gcd($num1, $num2);
+    if ($gcd == $question) {
+        line('Correct!');
+    }
 }
