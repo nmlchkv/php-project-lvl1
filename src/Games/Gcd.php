@@ -18,7 +18,8 @@ function operacion ()
     if ($num == $question) {
         line('Correct!');
     } else {
-        line('false');
+        line("'$question' is wrong answer ;(. Correct answer was '$num'.
+        Let's try again, $name!");
     }
 } 
 function gcd($num1, $num2) 
