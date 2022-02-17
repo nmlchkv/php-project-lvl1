@@ -18,9 +18,6 @@ function operacion ()
     $num = gcd($num1, $num2);
     if ($num == $question) {
         line('Correct!');
-    } else {
-        line("'$question' is wrong answer ;(. Correct answer was '$num'.
-        Let's try again, $name!");
     }
     $num1 = rand(1, 10);
     $num2 = rand(1, 10);
@@ -29,9 +26,6 @@ function operacion ()
     $num = gcd($num1, $num2);
     if ($num == $question) {
         line('Correct!');
-    } else {
-        line("'$question' is wrong answer ;(. Correct answer was '$num'.
-        Let's try again, $name!");
     }
     $num1 = rand(1, 10);
     $num2 = rand(1, 10);
