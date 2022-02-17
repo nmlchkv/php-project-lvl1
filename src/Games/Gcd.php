@@ -16,7 +16,7 @@ function operacion ()
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
     $num = gcd($num1, $num2);
-    if ($num === $question) {
+    if ($num == $question) {
         line('Correct!');
     }
     $num1 = rand(1, 10);
@@ -24,7 +24,7 @@ function operacion ()
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
     $num = gcd($num1, $num2);
-    if ($num === $question) {
+    if ($num == $question) {
         line('Correct!');
     }
     $num1 = rand(1, 10);
@@ -32,7 +32,7 @@ function operacion ()
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
     $num = gcd($num1, $num2);
-    if ($num === $question) {
+    if ($num == $question) {
         line("Congratulations, $name!");
     } else {
         line("'$question' is wrong answer ;(. Correct answer was '$num'.
