@@ -4,7 +4,6 @@ namespace src\games\gcd;
 
 use function cli\line;
 use function cli\prompt;
-use function src\engine\gcd;
 function operacion ()
 {
     line('Welcome to the Brain Game!');
