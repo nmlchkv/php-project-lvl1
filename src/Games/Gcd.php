@@ -17,6 +17,18 @@ function operacion ()
     $num = gcd($num1, $num2);
     if ($num == $question) {
         line('Correct!');
+    } 
+    line('Question: ' . $num1 . ' ' . $num2);
+    $question = prompt('Your answer');
+    $num = gcd($num1, $num2);
+    if ($num == $question) {
+        line('Correct!');
+    } 
+    line('Question: ' . $num1 . ' ' . $num2);
+    $question = prompt('Your answer');
+    $num = gcd($num1, $num2);
+    if ($num == $question) {
+        line("Congratulations, $name!");
     } else {
         line("'$question' is wrong answer ;(. Correct answer was '$num'.
         Let's try again, $name!");
