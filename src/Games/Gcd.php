@@ -11,8 +11,8 @@ function operacion ()
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line('Find the greatest common divisor of given numbers.');
-    $num1 = rand(1, 10);
-    $num2 = rand(1, 10);
+    public $num1 = rand(1, 10);
+    public $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
 
