@@ -14,7 +14,8 @@
         },
             "files": [
             "src/Games/Calc.php",
-            "src/Games/Even.php"
+            "src/Games/Even.php",
+            "src/Games/Gcd.php"
         ]
     },
         "authors": [
