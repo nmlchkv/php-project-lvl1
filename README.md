@@ -4,5 +4,6 @@
 [![PHP CI](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml/badge.svg)](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml)
 [![brain-even](https://asciinema.org/a/d8APTa0LNITRuyqRfUhxL16xv.svg)](https://asciinema.org/a/d8APTa0LNITRuyqRfUhxL16xv)
 [![brain-calc](https://asciinema.org/a/SyXR4PFBYjUAqNoRCPJUhUAm1.svg)](https://asciinema.org/a/SyXR4PFBYjUAqNoRCPJUhUAm1)
+[![brain-gcd](https://asciinema.org/a/e55qCx9iLqqvnzuj6tqgCDcej.svg)](https://asciinema.org/a/e55qCx9iLqqvnzuj6tqgCDcej)
 
 
