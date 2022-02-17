@@ -18,6 +18,8 @@ function operacion ()
     $num = $num1 < $num2 ? $num1 : $num2;
     function gcd($num1, $num2) {
         $num = ((($a % $b) ? gcd($b,$a % $b) : $b));
-        line($num);
+        if ($num == $question) {
+            line('Correct!');
+        }
     }
 } 
