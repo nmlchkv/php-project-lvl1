@@ -16,8 +16,7 @@ function operacion ()
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
     $num = $num1 < $num2 ? $num1 : $num2;
-    $gcd = gmp_strval(gmp_gcd($num1, $num2));
-    if ($gcd == $question) {
-        line('Correct!');
+    $gcd = (gmp_gcd($num1, $num2));
+    line (gmp_strval($gcd));
     }
 }
