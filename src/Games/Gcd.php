@@ -5,8 +5,7 @@ namespace src\games\gcd;
 use function cli\line;
 use function cli\prompt;
 use function src\engine;
-function operacion ()
-{
+
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
@@ -19,4 +18,3 @@ function operacion ()
     $gcd = (gmp_gcd($num1, $num2));
     line (gmp_strval($gcd));
     
-}
