@@ -15,7 +15,6 @@ function operacion ()
     $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $num2);
     $question = prompt('Your answer');
-    $num = $num1 < $num2 ? $num1 : $num2;
     function gcd($num1, $num2) {
         $num = ((($a % $b) ? gcd($b,$a % $b) : $b));
         if ($num == $question) {
