@@ -13,10 +13,8 @@ function operacion ()
     line('What number is missing in the progression?');
     $num1 = rand(1, 10);
     $num2 = rand(1, 3);
-    $result = '';
-    for($i = 1; $i > $num1; $i++) {
-        $result = $i + $num2;
-    }
+    line('Question: ' . $num1 + $num2 . ' ' . $num1 + $num2 + 1 . ' ' . $num1 + $num2 + 3 . ' ' . $num1 + $num2 + 5 . ' ' .);
+    $question = prompt('Your answer');
 }
 
 
