@@ -12,8 +12,8 @@ function operacion ()
     line("Hello, %s!", $name);
     line('What number is missing in the progression?');
     $result = [];
-    for($i = 0; $i <= 10; $i++) {
-        $rand = rand(1, 3);
+    for($i = 0; $i <= 20; $i++) {
+        $rand = rand(2, 4);
         if ($i % $rand === 0) {
         $result[] = $i;
     }
@@ -28,8 +28,8 @@ function operacion ()
     if ($question == $randStr) {
         line('Correct!');
         $result = [];
-        for($i = 0; $i <= 10; $i++) {
-            $rand = rand(1, 3);
+        for($i = 0; $i <= 20; $i++) {
+            $rand = rand(2, 4);
             if ($i % $rand === 0) {
             $result[] = $i;
         }
@@ -43,6 +43,22 @@ function operacion ()
         $question = prompt('Your answer');
     } if ($question == $randStr) {
         line('Correct!');
+        $result = [];
+        for($i = 0; $i <= 20; $i++) {
+            $rand = rand(2, 4);
+            if ($i % $rand === 0) {
+            $result[] = $i;
+        }
+      }
+        $str = implode(' ',$result);
+        $count = count($result) - 1;
+        $rand = rand(0, $count);
+        $randStr = $result[$rand];
+        $newStr = str_replace($randStr, '...', $str);
+        line('Question: ' . $newStr);
+        $question = prompt('Your answer');
+    } if ($question == $randStr) {
+        line("Congratulations, $name!");
     } else {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$randStr}'.
         Let's try again, $name!");
