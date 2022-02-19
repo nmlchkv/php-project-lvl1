@@ -5,7 +5,7 @@ namespace src\games\gcd;
 use function cli\line;
 use function cli\prompt;
 
-function operacion ()
+function operacion()
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -36,9 +36,9 @@ function operacion ()
         line("'$question' is wrong answer ;(. Correct answer was '$num'.
         Let's try again, $name!");
     }
-} 
+}
 function gcd($num1, $num2)
 {
-    $num = ((($num1 % $num2) ? gcd($num2,$num1 % $num2) : $num2));
+    $num = ((($num1 % $num2) ? gcd($num2, $num1 % $num2) : $num2));
     return $num;
 }
