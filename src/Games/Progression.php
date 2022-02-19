@@ -11,9 +11,18 @@ function operacion ()
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line('What number is missing in the progression?');
-    $num1 = rand(1, 10);
-    $num2 = rand(1, 3);
-    line('Question: ' . $num1 + $num2 . ' ' . $num1 + $num2 + 1 . ' ' . $num1 + $num2 + 3 . ' ' . $num1 + $num2 + 5);
+    $result = [];
+    for($i = 0; $i <= 10; $i++) {
+        if ($i % 2 === 0) {
+        $result[] = $i;
+    }
+  }
+    $str = implode(' ',$result);
+    $count = count($result) - 1;
+    $rand = rand(0, $count);
+    $randStr = $result[$rand];
+    $newStr = str_replace($randStr, '...', $str);
+    line('Question: ' . $newStr);
     $question = prompt('Your answer');
 }
 
