@@ -17,7 +17,7 @@ function operacion()
             $result[] = $i;
         }
     }
-    $str = implode(' ',$result);
+    $str = implode(' ', $result);
     $count = count($result) - 1;
     $rand = rand(0, $count);
     $randStr = $result[$rand];
@@ -32,7 +32,7 @@ function operacion()
                 $result[] = $i;
             }
         }
-        $str = implode(' ',$result);
+        $str = implode(' ', $result);
         $count = count($result) - 1;
         $rand = rand(0, $count);
         $randStr = $result[$rand];
