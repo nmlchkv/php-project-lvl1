@@ -24,6 +24,9 @@ function operacion ()
     $newStr = str_replace($randStr, '...', $str);
     line('Question: ' . $newStr);
     $question = prompt('Your answer');
+    if ($question == $randStr) {
+        line('Correct!');
+    } 
 }
 
 
