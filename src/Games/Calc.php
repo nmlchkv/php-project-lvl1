@@ -22,6 +22,26 @@ function operacion()
     switch ($operator) {
         case '+':
             $answer =  $num1 + $num2;
+    break;
+        case '*':
+            $answer = $num1 * $num2;
+    break;
+        case '-':
+            $answer = $num1 - $num2;
+    break;
+    } if ($answer == $question) {
+        line("Correct!");
+        $arrayOperator = ['-', '+', '*'];
+        $keyOperator = rand(0, 2);
+        $operator = $arrayOperator[$keyOperator];
+        $num1 = rand(1, 10);
+        $num2 = rand(1, 10);
+        line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
+        $question = prompt('Your answer');
+    }
+    switch ($operator) {
+        case '+':
+            $answer =  $num1 + $num2;
         break;
         case '*':
             $answer = $num1 * $num2;
@@ -45,26 +65,6 @@ function operacion()
         break;
         case '*':
             $answer = $num1 * $num2;
-        break;
-        case '-':
-            $answer = $num1 - $num2;
-        break;
-    } if ($answer == $question) {
-    line("Correct!");
-        $arrayOperator = ['-', '+', '*'];
-        $keyOperator = rand(0, 2);
-        $operator = $arrayOperator[$keyOperator];
-        $num1 = rand(1, 10);
-        $num2 = rand(1, 10);
-        line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
-        $question = prompt('Your answer');
-    }
-    switch ($operator) {
-        case '+':
-            $answer =  $num1 + $num2;
-        break;
-        case '*':
-        $answer = $num1 * $num2;
         break;
         case '-':
             $answer = $num1 - $num2;
