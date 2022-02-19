@@ -26,7 +26,10 @@ function operacion ()
     $question = prompt('Your answer');
     if ($question == $randStr) {
         line('Correct!');
-    } 
+    } else {
+        line("'{$question}' is wrong answer ;(. Correct answer was '{$randStr}'.
+        Let's try again, $name!");
+    }
 }
 
 
