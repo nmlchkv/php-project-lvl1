@@ -12,8 +12,8 @@ function operacion ()
     line("Hello, %s!", $name);
     line('What number is missing in the progression?');
     $result = [];
-    for($i = 0; $i <= 20; $i++) {
-        $rand = rand(2, 4);
+    for($i = 0; $i <= 10; $i++) {
+        $rand = rand(2, 3);
         if ($i % $rand === 0) {
         $result[] = $i;
     }
@@ -28,8 +28,8 @@ function operacion ()
     if ($question == $randStr) {
         line('Correct!');
         $result = [];
-        for($i = 0; $i <= 20; $i++) {
-            $rand = rand(2, 4);
+        for($i = 0; $i <= 10; $i++) {
+            $rand = rand(2, 3);
             if ($i % $rand === 0) {
             $result[] = $i;
         }
@@ -44,8 +44,8 @@ function operacion ()
     } if ($question == $randStr) {
         line('Correct!');
         $result = [];
-        for($i = 0; $i <= 20; $i++) {
-            $rand = rand(2, 4);
+        for($i = 0; $i <= 10; $i++) {
+            $rand = rand(2, 3);
             if ($i % $rand === 0) {
             $result[] = $i;
         }
