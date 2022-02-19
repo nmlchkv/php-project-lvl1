@@ -19,17 +19,17 @@ function operacion()
     $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
-switch ($operator) {
-    case '+':
-        $answer =  $num1 + $num2;
+    switch ($operator) {
+        case '+':
+            $answer =  $num1 + $num2;
         break;
-    case '*':
-        $answer = $num1 * $num2;
+        case '*':
+            $answer = $num1 * $num2;
         break;
-    case '-':
-        $answer = $num1 - $num2;
+        case '-':
+            $answer = $num1 - $num2;
         break;
-} if ($answer == $question) {
+    } if ($answer == $question) {
         line("Correct!");
         $arrayOperator = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
@@ -38,18 +38,18 @@ switch ($operator) {
         $num2 = rand(1, 10);
         line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
         $question = prompt('Your answer');
-}
-switch ($operator) {
-    case '+':
-        $answer =  $num1 + $num2;
+    }
+    switch ($operator) {
+        case '+':
+            $answer =  $num1 + $num2;
         break;
-    case '*':
-        $answer = $num1 * $num2;
+        case '*':
+            $answer = $num1 * $num2;
         break;
-    case '-':
-        $answer = $num1 - $num2;
+        case '-':
+            $answer = $num1 - $num2;
         break;
-} if ($answer == $question) {
+    } if ($answer == $question) {
     line("Correct!");
         $arrayOperator = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
@@ -58,21 +58,21 @@ switch ($operator) {
         $num2 = rand(1, 10);
         line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
         $question = prompt('Your answer');
-}
-switch ($operator) {
-    case '+':
-        $answer =  $num1 + $num2;
+    }
+    switch ($operator) {
+        case '+':
+            $answer =  $num1 + $num2;
         break;
-    case '*':
+        case '*':
         $answer = $num1 * $num2;
         break;
-    case '-':
-        $answer = $num1 - $num2;
+        case '-':
+            $answer = $num1 - $num2;
         break;
-} if ($answer == $question) {
+    } if ($answer == $question) {
         line("Congratulations, %s!", $name);
-} else {
+    } else {
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
     Let's try again, %s!", $name);
-}
+    }
 }
