@@ -14,8 +14,8 @@ function operacion()
     $rand = rand(1, 100);
     line('Question: ' . $rand);
     $question = prompt('Your answer');
-    $answer = $question($question);
-    $answerTwo = $question($question);
+    line(answer($question));
+    line(answer($question));
 }
 function answer ($question)
 {
