@@ -5,18 +5,18 @@ namespace src\games\progression;
 use function cli\line;
 use function cli\prompt;
 
-function operacion ()
+function operacion()
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line('What number is missing in the progression?');
     $result = [];
-    for($i = 0; $i <= 10; $i++) {
+    for ($i = 0; $i <= 10; $i++) {
         if ($i % 2 === 0) {
-        $result[] = $i;
+            $result[] = $i;
+        }
     }
-  }
     $str = implode(' ',$result);
     $count = count($result) - 1;
     $rand = rand(0, $count);
@@ -27,11 +27,11 @@ function operacion ()
     if ($question == $randStr) {
         line('Correct!');
         $result = [];
-        for($i = 0; $i <= 20; $i++) {
+        for ($i = 0; $i <= 20; $i++) {
             if ($i % 3 === 0) {
-            $result[] = $i;
+                $result[] = $i;
+            }
         }
-      }
         $str = implode(' ',$result);
         $count = count($result) - 1;
         $rand = rand(0, $count);
@@ -42,12 +42,12 @@ function operacion ()
     } if ($question == $randStr) {
         line('Correct!');
         $result = [];
-        for($i = 0; $i <= 40; $i++) {
+        for ($i = 0; $i <= 40; $i++) {
             if ($i % 4 === 0) {
-            $result[] = $i;
+                $result[] = $i;
+            }
         }
-      }
-        $str = implode(' ',$result);
+        $str = implode(' ', $result);
         $count = count($result) - 1;
         $rand = rand(0, $count);
         $randStr = $result[$rand];
@@ -61,5 +61,3 @@ function operacion ()
         Let's try again, $name!");
     }
 }
-
-
