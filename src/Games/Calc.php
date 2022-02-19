@@ -22,10 +22,10 @@ function operacion()
     switch ($operator) {
         case '+':
             $answer =  $num1 + $num2;
-        break;
+            break;
         case '*':
             $answer = $num1 * $num2;
-                break;
+            break;
         case '-':
             $answer = $num1 - $num2;
             break;
@@ -42,13 +42,13 @@ function operacion()
     switch ($operator) {
         case '+':
             $answer =  $num1 + $num2;
-        break;
+            break;
         case '*':
             $answer = $num1 * $num2;
-        break;
+            break;
         case '-':
             $answer = $num1 - $num2;
-        break;
+            break;
     } if ($answer == $question) {
         line("Correct!");
         $arrayOperator = ['-', '+', '*'];
@@ -62,13 +62,13 @@ function operacion()
     switch ($operator) {
         case '+':
             $answer =  $num1 + $num2;
-        break;
+            break;
         case '*':
             $answer = $num1 * $num2;
-        break;
+            break;
         case '-':
             $answer = $num1 - $num2;
-        break;
+            break;
     } if ($answer == $question) {
         line("Congratulations, %s!", $name);
     } else {
