@@ -19,15 +19,15 @@ function operacion()
         $rand = rand(1, 100);
         line('Question: ' . $rand);
         $question = prompt('Your answer');
-        } if (gmp_prob_prime($rand) === 2 && $question === 'yes' || gmp_prob_prime($rand) !== 2 && $question === 'no') {
+    } if (gmp_prob_prime($rand) === 2 && $question === 'yes' || gmp_prob_prime($rand) !== 2 && $question === 'no') {
             line('Correct!');
             $rand = rand(1, 100);
             line('Question: ' . $rand);
             $question = prompt('Your answer');
-        } if (gmp_prob_prime($rand) === 2 && $question === 'yes' || gmp_prob_prime($rand) !== 2 && $question === 'no') {
+    } if (gmp_prob_prime($rand) === 2 && $question === 'yes' || gmp_prob_prime($rand) !== 2 && $question === 'no') {
             line("Congratulations, $name!");
-        } else {
+    } else {
             line("'yes' is wrong answer ;(. Correct answer was 'no'.
         Let's try again, %s!", $name);
-        }
+    }
 }
