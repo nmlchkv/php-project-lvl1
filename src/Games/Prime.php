@@ -25,7 +25,7 @@ function operacion()
             line('Question: ' . $rand);
             $question = prompt('Your answer');
             check ($question, $rand); 
-        } elseif ($result === 3) {
+        } if ($result === 3) {
             return (line("Congratulations, $name!"));
     } else {
         return (line("'yes' is wrong answer ;(. Correct answer was 'no'.
