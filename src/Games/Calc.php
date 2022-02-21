@@ -49,7 +49,7 @@ function operacion()
     }
 }
 
-function operator ($operator, $num1, $num2) 
+function operator($operator, $num1, $num2)
 {
     switch ($operator) {
         case '+':
