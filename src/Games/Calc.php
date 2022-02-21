@@ -30,16 +30,7 @@ function operacion()
         line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
         $question = prompt('Your answer');
     }
-    switch ($operator) {
-        case '+':
-            $answer =  $num1 + $num2;
-            break;
-        case '*':
-            $answer = $num1 * $num2;
-            break;
-        case '-':
-            $answer = $num1 - $num2;
-            break;
+    $answer = operator($operator, $num1, $num2);
     } if ($answer == $question) {
         line("Correct!");
         $arrayOperator = ['-', '+', '*'];
