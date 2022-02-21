@@ -19,16 +19,7 @@ function operacion()
     $num2 = rand(1, 10);
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
-    switch ($operator) {
-        case '+':
-            $answer =  $num1 + $num2;
-            break;
-        case '*':
-            $answer = $num1 * $num2;
-            break;
-        case '-':
-            $answer = $num1 - $num2;
-            break;
+    $answer = operator($operator, $num1, $num2);
     } if ($answer == $question) {
         line("Correct!");
         $arrayOperator = ['-', '+', '*'];
@@ -75,4 +66,19 @@ function operacion()
         line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
     Let's try again, %s!", $name);
     }
+}
+
+function operator ($operator, $num1, $num2) {
+    switch ($operator) {
+        case '+':
+            $answer =  $num1 + $num2;
+            break;
+        case '*':
+            $answer = $num1 * $num2;
+            break;
+        case '-':
+            $answer = $num1 - $num2;
+            break;
+        }
+        return $answer;
 }
