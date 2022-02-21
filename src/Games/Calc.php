@@ -20,7 +20,7 @@ function operacion()
     line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
     $question = prompt('Your answer');
     $answer = operator($operator, $num1, $num2);
-    } if ($answer == $question) {
+    if ($answer == $question) {
         line("Correct!");
         $arrayOperator = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
@@ -31,7 +31,7 @@ function operacion()
         $question = prompt('Your answer');
     }
     $answer = operator($operator, $num1, $num2);
-    } if ($answer == $question) {
+    if ($answer == $question) {
         line("Correct!");
         $arrayOperator = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
