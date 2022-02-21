@@ -14,9 +14,9 @@ function operacion()
     $rand = rand(1, 100);
     line('Question: ' . $rand);
     $question = prompt('Your answer');
-    function check ($question, $rand)
+    $result = 0;
+    function check ($question, $rand, $result)
 {
-    public $result = 0;
     } if (gmp_prob_prime($rand) === 2 && $question === 'yes' || gmp_prob_prime($rand) !== 2 && $question === 'no') {
         $result += 1;
         line('Correct!');
