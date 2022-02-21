@@ -20,17 +20,16 @@ function operacion()
     } if (gmp_prob_prime($rand) === 2 && $question === 'yes' || gmp_prob_prime($rand) !== 2 && $question === 'no') {
         $result += 1;
         line('Correct!');
-        if ($result !== 3) {
+        } if ($result !== 3) {
             $rand = rand(1, 100);
             line('Question: ' . $rand);
             $question = prompt('Your answer');
-            return (check ($question, $rand));
+            check ($question, $rand);
         } elseif ($result === 3) {
-            line("Congratulations, $name!");
-        }
+            return (line("Congratulations, $name!"));
     } else {
-        line("'yes' is wrong answer ;(. Correct answer was 'no'.
-    Let's try again, %s!", $name);
+        return (line("'yes' is wrong answer ;(. Correct answer was 'no'.
+    Let's try again, %s!", $name));
 }
     
 }
