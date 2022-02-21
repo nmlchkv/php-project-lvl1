@@ -16,15 +16,15 @@ function operacion()
     $question = prompt('Your answer');
     function check ($question, $rand)
 {
-    $result = 0;
+    public $result = 0;
     } if (gmp_prob_prime($rand) === 2 && $question === 'yes' || gmp_prob_prime($rand) !== 2 && $question === 'no') {
         $result += 1;
         line('Correct!');
-        } if ($result !== 3) {
+     }   if ($result !== 3) {
             $rand = rand(1, 100);
             line('Question: ' . $rand);
             $question = prompt('Your answer');
-            check ($question, $rand);
+            check ($question, $rand); 
         } elseif ($result === 3) {
             return (line("Congratulations, $name!"));
     } else {
