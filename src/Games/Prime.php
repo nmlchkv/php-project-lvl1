@@ -24,7 +24,7 @@ function operacion()
             $rand = rand(1, 100);
             line('Question: ' . $rand);
             $question = prompt('Your answer');
-            check ($question, $rand);
+            return (check ($question, $rand));
         } elseif ($result === 3) {
             line("Congratulations, $name!");
         }
