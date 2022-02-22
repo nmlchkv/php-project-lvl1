@@ -20,7 +20,6 @@ function operacion()
     $rand = rand(0, $count);
     $randStr = $result[$rand];
     $number = str_replace($randStr, '...', $str);
-    return  ($number, $question);
+    return  logic($number, $question);
       
 }
-logic($number, $question);

@@ -15,6 +15,7 @@
     if($number == $answer) {
       line('Correct!')
     }
+     ??? 
     line("Congratulations, $name!");
     } else {
         line("'{$answer}' is wrong answer ;(. Correct answer was '{$number}'.
