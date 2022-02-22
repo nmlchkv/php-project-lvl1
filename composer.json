@@ -15,6 +15,7 @@
             "php\\project\\lvl1\\": "src/Games"
         },
             "files": [
+            "src/Cli.php",
             "src/Games/Calc.php",
             "src/Games/Even.php",
             "src/Games/Gcd.php",
