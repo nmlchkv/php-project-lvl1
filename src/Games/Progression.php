@@ -34,7 +34,7 @@ function operacion()
     $result3 = [];
     for ($i = 0; $i <= 100; $i++) {
         if ($i % 8 === 0) {
-            $result[] = $i;
+            $result3[] = $i;
         }
     }
     $str3 = implode(' ', $result);
