@@ -21,6 +21,7 @@
       } else {
         line("'{$answer}' is wrong answer ;(. Correct answer was '{$arrayRand[$i]}'.
         Let's try again, $name!");
+        break;
      }
   }
     line("Congratulations, $name!");
