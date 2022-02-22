@@ -23,6 +23,6 @@
         Let's try again, $name!");
         break;
      }
+     line("Congratulations, $name!");
   }
-    line("Congratulations, $name!");
 }
