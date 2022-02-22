@@ -9,40 +9,41 @@ use function src\engine\logic;
 function operacion()
 {
     $question = ('What number is missing in the progression?');
-    $result = [];
+    $result1 = [];
     for ($i = 0; $i <= 100; $i++) {
         if ($i % 6 === 0) {
-            $result[] = $i;
+            $result1[] = $i;
         }
     }
-    $str = implode(' ', $result);
-    $count = count($result) - 1;
-    $rand = rand(0, $count);
-    $randStr = $result[$rand];
-    $number1 = str_replace($randStr, '...', $str);
-    $result = [];
+    $str1 = implode(' ', $result1);
+    $count1 = count($result1) - 1;
+    $rand1 = rand(0, $count1);
+    $randStr1 = $result1[$rand1];
+    $number1 = str_replace($randStr1, '...', $str1);
+    $result2 = [];
     for ($i = 0; $i <= 100; $i++) {
         if ($i % 7 === 0) {
-            $result[] = $i;
+            $result2[] = $i;
         }
     }
-    $str = implode(' ', $result);
-    $count = count($result) - 1;
-    $rand = rand(0, $count);
-    $randStr = $result[$rand];
-    $number2 = str_replace($randStr, '...', $str);
-    $result = [];
+    $str2 = implode(' ', $result2);
+    $count2 = count($result2) - 1;
+    $rand2 = rand(0, $count2);
+    $randStr2 = $result2[$rand2];
+    $number2 = str_replace($randStr2, '...', $str2);
+    $result3 = [];
     for ($i = 0; $i <= 100; $i++) {
         if ($i % 8 === 0) {
             $result[] = $i;
         }
     }
-    $str = implode(' ', $result);
-    $count = count($result) - 1;
-    $rand = rand(0, $count);
-    $randStr = $result[$rand];
-    $number3 = str_replace($randStr, '...', $str);
+    $str3 = implode(' ', $result);
+    $count3 = count($result3) - 1;
+    $rand3 = rand(0, $count3);
+    $randStr3 = $result3[$rand3];
+    $number3 = str_replace($randStr3, '...', $str3);
     $array = [[$number1], [$number2], [$number3]];
-    $logic = logic($array, $question);
+    $arrayRand = [[$randStr1], [$randStr2], [$randStr3]];
+    $logic = logic($array, $question, $arrayRand);
     return $logic;
 }
