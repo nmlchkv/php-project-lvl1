@@ -8,7 +8,6 @@ use function src\engine\logic;
 
 function operacion()
 {
-    use function src\engine\logic;
     $question = ('What number is missing in the progression?');
     $result = [];
     for ($i = 0; $i <= 40; $i++) {
