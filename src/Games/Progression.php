@@ -43,6 +43,5 @@ function operacion()
     $randStr = $result[$rand];
     $number3 = str_replace($randStr, '...', $str);
     $array = [$number1], [$number2], [$number3]];
-    return  logic($array, $question);
-      
+    logic($array, $question); 
 }
