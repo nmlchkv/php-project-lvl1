@@ -4,16 +4,14 @@ namespace src\games\progression;
 
 use function cli\line;
 use function cli\prompt;
+use function src\engine\logic;
 
 function operacion()
 {
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    line('What number is missing in the progression?');
+    $question = ('What number is missing in the progression?');
     $result = [];
-    for ($i = 0; $i <= 10; $i++) {
-        if ($i % 2 === 0) {
+    for ($i = 0; $i <= 40; $i++) {
+        if ($i % 4 === 0) {
             $result[] = $i;
         }
     }
@@ -21,43 +19,7 @@ function operacion()
     $count = count($result) - 1;
     $rand = rand(0, $count);
     $randStr = $result[$rand];
-    $newStr = str_replace($randStr, '...', $str);
-    line('Question: ' . $newStr);
-    $question = prompt('Your answer');
-    if ($question == $randStr) {
-        line('Correct!');
-        $result = [];
-        for ($i = 0; $i <= 20; $i++) {
-            if ($i % 3 === 0) {
-                $result[] = $i;
-            }
-        }
-        $str = implode(' ', $result);
-        $count = count($result) - 1;
-        $rand = rand(0, $count);
-        $randStr = $result[$rand];
-        $newStr = str_replace($randStr, '...', $str);
-        line('Question: ' . $newStr);
-        $question = prompt('Your answer');
-    } if ($question == $randStr) {
-        line('Correct!');
-        $result = [];
-        for ($i = 0; $i <= 40; $i++) {
-            if ($i % 4 === 0) {
-                $result[] = $i;
-            }
-        }
-        $str = implode(' ', $result);
-        $count = count($result) - 1;
-        $rand = rand(0, $count);
-        $randStr = $result[$rand];
-        $newStr = str_replace($randStr, '...', $str);
-        line('Question: ' . $newStr);
-        $question = prompt('Your answer');
-    } if ($question == $randStr) {
-        line("Congratulations, $name!");
-    } else {
-        line("'{$question}' is wrong answer ;(. Correct answer was '{$randStr}'.
-        Let's try again, $name!");
-    }
+    $number = str_replace($randStr, '...', $str);
+    return  (logic($number, $question));
+      
 }
