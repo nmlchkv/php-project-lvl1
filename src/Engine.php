@@ -17,7 +17,7 @@
     }
     line("Congratulations, $name!");
     } else {
-        line("'{$question}' is wrong answer ;(. Correct answer was '{$randStr}'.
+        line("'{$answer}' is wrong answer ;(. Correct answer was '{$number}'.
         Let's try again, $name!");
     }
   }
