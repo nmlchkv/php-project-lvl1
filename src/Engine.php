@@ -22,7 +22,7 @@
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
             Let's try again, $name!");
             break;
-      }
+        }
         line("Congratulations, $name!");
-  }
+    }
 }
