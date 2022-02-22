@@ -19,7 +19,7 @@
         if($strRand == $answer) {
           line('Correct!');
       } else {
-        line("'{$answer}' is wrong answer ;(. Correct answer was '{$arrayRand[$i]}'.
+        line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
         Let's try again, $name!");
         break;
      }
