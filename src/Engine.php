@@ -17,7 +17,7 @@
       $strRand = implode(' ', $arrayRand[$i]);
       line('Question: ' . $str);
         if($strRand == $answer) {
-          line('Correct!')
+          line('Correct!');
       } else {
         line("'{$answer}' is wrong answer ;(. Correct answer was '{$arrayRand[$i]}'.
         Let's try again, $name!");
