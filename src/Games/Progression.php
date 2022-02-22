@@ -37,7 +37,7 @@ function operacion()
             $result3[] = $i;
         }
     }
-    $str3 = implode(' ', $result);
+    $str3 = implode(' ', $result3);
     $count3 = count($result3) - 1;
     $rand3 = rand(0, $count3);
     $randStr3 = $result3[$rand3];
