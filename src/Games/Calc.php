@@ -4,7 +4,7 @@ namespace src\games\calc;
 
 use function cli\line;
 use function cli\prompt;
-use function src\engine;
+use function src\engine\logic;
 
 function operacion()
 {
