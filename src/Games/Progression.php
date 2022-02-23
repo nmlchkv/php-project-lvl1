@@ -9,6 +9,7 @@ use function src\engine\logic;
 function operacion()
 {
     $question = ('What number is missing in the progression?');
+    $arrayRand = [];
     $result1 = [];
     for ($i = 0; $i <= 100; $i++) {
         if ($i % 6 === 0) {
