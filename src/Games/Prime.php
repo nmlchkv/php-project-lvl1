@@ -22,4 +22,3 @@ function operacion()
     $logic = logic($array, $question, $arrayRand);
     return $logic;
 }
-}
