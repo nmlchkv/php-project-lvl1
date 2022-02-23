@@ -18,6 +18,8 @@ function operacion()
         $num = gcd($num1, $num2);
         $arrayRand[] = [$num];
     }
+    $logic = logic($array, $question, $arrayRand);
+    return $logic;
 }
 function gcd($num1, $num2)
 {
