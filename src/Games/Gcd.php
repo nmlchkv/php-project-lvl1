@@ -4,6 +4,7 @@ namespace src\games\gcd;
 
 use function cli\line;
 use function cli\prompt;
+use function src\engine\logic;
 
 function operacion()
 {
