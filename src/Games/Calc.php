@@ -8,45 +8,20 @@ use function src\engine;
 
 function operacion()
 {
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    line('What is the result of the expression?');
-    $arrayOperator = ['-', '+', '*'];
-    $keyOperator = rand(0, 2);
-    $operator = $arrayOperator[$keyOperator];
-    $num1 = rand(1, 10);
-    $num2 = rand(1, 10);
-    line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
-    $question = prompt('Your answer');
-    $answer = operator($operator, $num1, $num2);
-    if ($answer == $question) {
-        line("Correct!");
+    $question = ('What is the result of the expression?');
+    $arrayRand = [];
+    $array = [];
+    for ($i = 0; $i <= 2; $i++) {
         $arrayOperator = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
         $operator = $arrayOperator[$keyOperator];
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
-        $question = prompt('Your answer');
+        $array[] = [$num1 . ' ' . $operator . ' ' . $num2];
+        $arrayRand[] = [operator($operator, $num1, $num2)];
     }
-    $answer = operator($operator, $num1, $num2);
-    if ($answer == $question) {
-        line("Correct!");
-        $arrayOperator = ['-', '+', '*'];
-        $keyOperator = rand(0, 2);
-        $operator = $arrayOperator[$keyOperator];
-        $num1 = rand(1, 10);
-        $num2 = rand(1, 10);
-        line('Question: ' . $num1 . ' ' . $operator . ' ' . $num2);
-        $question = prompt('Your answer');
-    }
-    $answer = operator($operator, $num1, $num2); if ($answer == $question) {
-        line("Congratulations, %s!", $name);
-    } else {
-        line("'{$question}' is wrong answer ;(. Correct answer was '{$answer}'.
-    Let's try again, %s!", $name);
-    }
+    $logic = logic($array, $question, $arrayRand);
+    return $logic;
 }
 
 function operator($operator, $num1, $num2)
