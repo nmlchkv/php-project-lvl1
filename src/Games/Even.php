@@ -19,7 +19,8 @@ function operacion()
         } else {
             $arrayRand[] = ['no'];
         }
+    
+}
     $logic = logic($array, $question, $arrayRand);
     return $logic;
-}
 }
