@@ -26,3 +26,4 @@ function logic($array, $question, $arrayRand)
         line("Congratulations, $name!");
     }
 }
+
