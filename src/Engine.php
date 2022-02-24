@@ -19,11 +19,9 @@ function logic($array, $question, $arrayRand)
         if ($strRand == $answer) {
             line('Correct!');
         } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
-            Let's try again, $name!");
-            break;
+            return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
+            Let's try again, $name!"));
         }
-    } if ($strRand == $answer) {
-        line("Congratulations, $name!");
     }
+        line("Congratulations, $name!");
 }
