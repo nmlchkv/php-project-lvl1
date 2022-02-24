@@ -23,6 +23,6 @@ function logic($array, $question, $arrayRand)
             Let's try again, $name!");
             break;
         }
+        line("Congratulations, $name!");
     }
-    line("Congratulations, $name!");
 }
