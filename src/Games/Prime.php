@@ -23,10 +23,10 @@ function operacion()
     $logic = logic($array, $question, $arrayRand);
     return $logic;
 }
-function is_prime ($num)
+function is_prime($num)
 {
-    for($i = 2; $i <= sqrt($num); $i++) {
-        if($num % $i == 0) {
+    for ($i = 2; $i <= sqrt($num); $i++) {
+        if ($num % $i == 0) {
             return false;
         }
     }
