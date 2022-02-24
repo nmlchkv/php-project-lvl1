@@ -24,7 +24,7 @@ function operacion()
     return $logic;
 }
 
-function operator(sting $operator, int $num1, int $num2)
+function operator(string $operator, int $num1, int $num2)
 {
     switch ($operator) {
         case '+':
