@@ -28,14 +28,14 @@ function operator(string $operator, int $num1, int $num2)
 {
     switch ($operator) {
         case '+':
-            int $answer =  $num1 + $num2;
+            $answer =  $num1 + $num2;
             break;
         case '*':
-            int $answer = $num1 * $num2;
+            $answer = $num1 * $num2;
             break;
         case '-':
-            int $answer = $num1 - $num2;
+            $answer = $num1 - $num2;
             break;
     }
-        return int $answer;
+        return $answer;
 }
