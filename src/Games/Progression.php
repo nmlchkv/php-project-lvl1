@@ -10,41 +10,24 @@ function operacion()
 {
     $question = ('What number is missing in the progression?');
     $arrayRand = [];
-    $result1 = [];
-    for ($i = 0; $i <= 100; $i++) {
-        if ($i % 6 === 0) {
-            $result1[] = $i;
-        }
-    }
-    $str1 = implode(' ', $result1);
-    $count1 = count($result1) - 1;
-    $rand1 = rand(0, $count1);
-    $randStr1 = $result1[$rand1];
-    $number1 = str_replace($randStr1, '...', $str1);
-    $result2 = [];
-    for ($i = 0; $i <= 100; $i++) {
-        if ($i % 7 === 0) {
-            $result2[] = $i;
-        }
-    }
-    $str2 = implode(' ', $result2);
-    $count2 = count($result2) - 1;
-    $rand2 = rand(0, $count2);
-    $randStr2 = $result2[$rand2];
-    $number2 = str_replace($randStr2, '...', $str2);
-    $result3 = [];
-    for ($i = 0; $i <= 100; $i++) {
-        if ($i % 8 === 0) {
-            $result3[] = $i;
-        }
-    }
-    $str3 = implode(' ', $result3);
-    $count3 = count($result3) - 1;
-    $rand3 = rand(0, $count3);
-    $randStr3 = $result3[$rand3];
-    $number3 = str_replace($randStr3, '...', $str3);
-    $array = [[$number1], [$number2], [$number3]];
-    $arrayRand = [[$randStr1], [$randStr2], [$randStr3]];
+    $array = [];
+    $result = [];
+    for ($i = 0; $i <= 2; $i++) {
+        $randNum = rand(100, 200);
+          for ($i = 0; $i <= $randNum; $i++) {
+            $randDivision = rand(6 , 8);
+              if ($i % $randDivision === 0) {
+              $result[] = $i;
+              }
+          }
+          $str = implode(' ', $result);
+           $count = count($result) - 1;
+          $rand = rand(0, $count);
+          $randStr = $result[$rand];
+          $array[] = [str_replace($randStr, '...', $str)];
+          $arrayRand[] = [$randStr];
+     
+      }
     $logic = logic($array, $question, $arrayRand);
     return $logic;
 }
