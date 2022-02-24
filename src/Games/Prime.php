@@ -14,7 +14,7 @@ function operacion()
     for ($i = 0; $i <= 2; $i++) {
         $num = rand(1, 100);
         $array[] = [$num];
-        if (gmp_prob_prime($num) === 2) {
+        if ($num / $num && $num / 1) {
             $arrayRand[] = ['yes'];
         } else {
             $arrayRand[] = ['no'];
