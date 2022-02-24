@@ -14,7 +14,7 @@ function operacion()
     for ($i = 0; $i <= 2; $i++) {
         $num = rand(1, 100);
         $array[] = [$num];
-        if (is_prime($num) === true)) {
+        if (is_prime($num) === true) {
             $arrayRand[] = ['yes'];
         } else {
             $arrayRand[] = ['no'];
