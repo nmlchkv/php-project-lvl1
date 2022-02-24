@@ -14,7 +14,7 @@ function operacion()
     for ($i = 0; $i <= 2; $i++) {
         $num = rand(1, 100);
         $array[] = [$num];
-        if ($num / $num && $num / 1) {
+        if (is_prime($num) === true) {
             $arrayRand[] = ['yes'];
         } else {
             $arrayRand[] = ['no'];
@@ -22,4 +22,13 @@ function operacion()
     }
     $logic = logic($array, $question, $arrayRand);
     return $logic;
+}
+function is_prime ($num)
+{
+    for($i = 2; $i <= sqrt($num); $i++) {
+        if($num % $i == 0) {
+            return false;
+        }
+    }
+    return true;
 }
