@@ -13,10 +13,10 @@ function operacion()
     $result1 = [];
     for ($i = 0; $i <= 100; $i++) {
         if ($i % 6 === 0) {
-            $result1[] = $i; 
+            $result1[] = $i;
         } if (count($result1) === 10) {
             break;
-          }
+        }
     }
     $str1 = implode(' ', $result1);
     $count1 = count($result1) - 1;
@@ -29,7 +29,7 @@ function operacion()
             $result2[] = $i;
         } if (count($result2) === 10) {
             break;
-          }
+        }
     }
     $str2 = implode(' ', $result2);
     $count2 = count($result2) - 1;
@@ -42,7 +42,7 @@ function operacion()
             $result3[] = $i;
         } if (count($result3) === 10) {
             break;
-          }
+        }
     }
     $str3 = implode(' ', $result3);
     $count3 = count($result3) - 1;
