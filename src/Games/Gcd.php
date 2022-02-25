@@ -21,7 +21,7 @@ function operacion()
     $logic = logic($array, $question, $arrayRand);
     return $logic;
 }
-function gcd(int $num1, int $num2)
+function gcd(bool $num1, bool $num2)
 {
     $num = ((($num1 % $num2) ? gcd($num2, $num1 % $num2) : $num2));
     return $num;
