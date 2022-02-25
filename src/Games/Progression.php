@@ -12,7 +12,7 @@ function operacion()
     $arrayRand = [];
     $result = [];
     for ($i = 0; $i <= 2; $i++) {
-        $arr = progression ($result);
+        $arr = progression($result);
         $str = implode(' ', $arr);
         $count = count($arr) - 1;
         $index = rand(0, $count);
@@ -24,11 +24,11 @@ function operacion()
     $logic = logic($array, $question, $arrayRand);
     return $logic;
 }
-function progression(array $result1) 
+function progression(array $result1)
 {
     $randNumber = rand(100, 200);
     $randDiv = rand(6, 8);
-     for ($i = 0; $i <= $randNumber; $i++) {
+    for ($i = 0; $i <= $randNumber; $i++) {
         if ($i % $randDiv === 0) {
             $result1[] = $i;
         } if (count($result1) === 10) {
