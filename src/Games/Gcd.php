@@ -24,6 +24,7 @@ function operacion()
 function gcd(int $num1, int $num2)
 {
     $div = $num1 % $num2;
-    $num = (($div ? gcd($num2, $div) : $num2));
+    $gcd = gcd($num2, $div);
+    $num = ($div ? $gcd : $num2);
     return $num;
 }
