@@ -24,8 +24,6 @@ function operacion()
     $logic = logic($array, $question, $arrayRand);
     return $logic;
 }
-
-
 function progression(array $result1) 
 {
     $randNumber = rand(100, 200);
