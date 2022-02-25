@@ -37,5 +37,5 @@ function operator($operator, $num1, $num2)
             $answer = $num1 - $num2;
             break;
     }
-        return $answer;
+        return int $answer;
 }
