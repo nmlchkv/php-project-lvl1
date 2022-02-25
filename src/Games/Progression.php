@@ -10,6 +10,7 @@ function operacion()
 {
     $question = ('What number is missing in the progression?');
     $arrayRand = [];
+    $array = [];
     $result = [];
     for ($i = 0; $i <= 2; $i++) {
         $arr = progression($result);
