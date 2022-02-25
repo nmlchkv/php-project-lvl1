@@ -15,7 +15,7 @@ function operacion()
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $array[] = ["$num1 $num2"];
-        $num = gmp_gcd($num1, $num2);
+        $num = gcd($num1, $num2);
         $arrayRand[] = [$num];
     }
     $logic = logic($array, $question, $arrayRand);
