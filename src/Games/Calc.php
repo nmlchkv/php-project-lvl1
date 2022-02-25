@@ -26,7 +26,7 @@ function operacion()
 
 function operator(string $operator, int $num1, int $num2)
 {
-    switch ($operator) {
+    switch (string $operator) {
         case '+':
             $answer =  $num1 + $num2;
             break;
@@ -37,5 +37,5 @@ function operator(string $operator, int $num1, int $num2)
             $answer = $num1 - $num2;
             break;
     }
-        return $answer;
+        return int $answer;
 }
