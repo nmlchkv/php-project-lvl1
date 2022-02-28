@@ -1,6 +1,6 @@
 <?php
 
-namespace src\games\gcd;
+namespace Src\Games\Gcd;
 
 use function cli\line;
 use function cli\prompt;

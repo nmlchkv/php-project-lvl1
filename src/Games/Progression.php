@@ -1,6 +1,6 @@
 <?php
 
-namespace src\games\progression;
+namespace Src\Games\Progression;
 
 use function cli\line;
 use function cli\prompt;

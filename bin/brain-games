@@ -10,5 +10,5 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-use function src\Cli\operacion;
+use function src\cli\operacion;
 operacion();

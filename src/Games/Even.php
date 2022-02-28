@@ -1,6 +1,6 @@
 <?php
 
-namespace src\games\even;
+namespace Src\Games\Even;
 
 use function cli\line;
 use function cli\prompt;
