@@ -20,7 +20,7 @@ function calculation()
         $array[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $arrayRand[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = Execution($array, $question, $arrayRand);
+    $logic = execution($array, $question, $arrayRand);
     return $logic;
 }
 
