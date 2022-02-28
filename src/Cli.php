@@ -2,10 +2,10 @@
 
   namespace Src\Cli;
 
-  use function cli\line;
-  use function cli\prompt;
+  use function Cli\Line;
+  use function Cli\Prompt;
 
-function operacion()
+function calculation()
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');

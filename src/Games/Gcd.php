@@ -2,11 +2,11 @@
 
 namespace Src\Games\Gcd;
 
-use function cli\line;
-use function cli\prompt;
-use function src\engine\logic;
+use function Cli\Line;
+use function Cli\Prompt;
+use function Src\Engine\Logic;
 
-function operacion()
+function calculation()
 {
     $question = ('Find the greatest common divisor of given numbers.');
     $arrayRand = [];
