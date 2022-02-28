@@ -9,21 +9,20 @@
                 "bin/brain-prime"
         ],
         "autoload": {
-                "files": [
-                        "src/Cli.php",
-                        "src/Engine.php",
-                        "src/Games/Calc.php",
-                        "src/Games/Even.php",
-                        "src/Games/Gcd.php",
-                        "src/Games/Progression.php",
-                        "src/Games/Prime.php"
-
+        "files": [
+                  "src/Cli.php",
+                  "src/Engine.php",
+                  "src/Games/Calc.php",
+                  "src/Games/Even.php",
+                  "src/Games/Gcd.php",
+                  "src/Games/Progression.php",
+                  "src/Games/Prime.php"
         ]
     },
         "authors": [
         {
             "name": "Nikolai Malchikov",
-            "email": "malchikov.ne@gmail.com",
+            "email": "malchikov.ne@gmail.com"
         }
     ],
         "description": "hexlet php-package",
