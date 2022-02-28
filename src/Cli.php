@@ -1,9 +1,9 @@
 <?php
 
-  namespace Src\Cli;
+namespace Src\Cli;
 
-  use function Cli\Line;
-  use function Cli\Prompt;
+use function Cli\Line;
+use function Cli\Prompt;
 
 function calculation()
 {
