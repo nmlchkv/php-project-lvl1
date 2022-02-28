@@ -20,6 +20,6 @@ function calculation()
             $arrayRand[] = ['no'];
         }
     }
-    $logic = logic($array, $question, $arrayRand);
+    $logic = execution($array, $question, $arrayRand);
     return $logic;
 }

@@ -22,7 +22,7 @@ function calculation()
         $array[] = [$number];
         $arrayRand[] = [$randStr];
     }
-    $logic = logic($array, $question, $arrayRand);
+    $logic = execution($array, $question, $arrayRand);
     return $logic;
 }
 function progression(array $result1)

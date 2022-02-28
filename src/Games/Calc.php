@@ -18,13 +18,13 @@ function calculation()
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $array[] = [$num1 . ' ' . $operator . ' ' . $num2];
-        $arrayRand[] = [operator($operator, $num1, $num2)];
+        $arrayRand[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = logic($array, $question, $arrayRand);
+    $logic = execution($array, $question, $arrayRand);
     return $logic;
 }
 
-function operator(string $operator, int $num1, int $num2)
+function getNumber(string $operator, int $num1, int $num2)
 {
     switch ($operator) {
         case '+':

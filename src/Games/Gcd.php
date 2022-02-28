@@ -18,7 +18,7 @@ function calculation()
         $num = gcd($num1, $num2);
         $arrayRand[] = [$num];
     }
-    $logic = logic($array, $question, $arrayRand);
+    $logic = execution($array, $question, $arrayRand);
     return $logic;
 }
 
