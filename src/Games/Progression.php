@@ -4,7 +4,7 @@ namespace Src\Games\Progression;
 
 use function Src\Engine\Execution;
 
-function calculation()
+function Calculation()
 {
     $question = ('What number is missing in the progression?');
     $arrayRand = [];

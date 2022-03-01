@@ -4,7 +4,7 @@ namespace Src\Games\Even;
 
 use function Src\Engine\Execution;
 
-function calculation()
+function Calculation()
 {
     $question = ('Answer "yes" if the number is even, otherwise answer "no".');
     $arrayRand = [];
