@@ -1,11 +1,11 @@
 <?php
 
-  namespace src\engine;
+namespace Src\Engine;
 
-  use function cli\line;
-  use function cli\prompt;
+use function Cli\Line;
+use function Cli\Prompt;
 
-function logic(array $array, string $question, array $arrayRand)
+function execution($array, $question, $arrayRand)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
