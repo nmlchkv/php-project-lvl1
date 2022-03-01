@@ -18,6 +18,6 @@ function calculation()
             $arrayRand[] = ['no'];
         }
     }
-    $logic = execution($array, $question, $arrayRand);
+    $logic = Execution($array, $question, $arrayRand);
     return $logic;
 }

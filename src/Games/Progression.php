@@ -20,7 +20,7 @@ function calculation()
         $array[] = [$number];
         $arrayRand[] = [$randStr];
     }
-    $logic = execution($array, $question, $arrayRand);
+    $logic = Execution($array, $question, $arrayRand);
     return $logic;
 }
 function progression(array $result1)

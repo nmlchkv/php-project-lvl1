@@ -7,21 +7,21 @@ use function Cli\Prompt;
 
 function execution(array $array, string $question, array $arrayRand)
 {
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    line($question);
+    Line('Welcome to the Brain Games!');
+    $name = Prompt('May I have your name?');
+    Line("Hello, %s!", $name);
+    Line($question);
     for ($i = 0; $i <= count($array) - 1; $i++) {
         $str = implode(' ', $array[$i]);
         $strRand = implode(' ', $arrayRand[$i]);
-        line('Question: ' . $str);
-        $answer = prompt('Your answer');
+        Line('Question: ' . $str);
+        $answer = Prompt('Your answer');
         if ($strRand == $answer) {
-            line('Correct!');
+            Line('Correct!');
         } else {
-            return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
+            return (Line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
             Let's try again, $name!"));
         }
     }
-        line("Congratulations, $name!");
+        Line("Congratulations, $name!");
 }

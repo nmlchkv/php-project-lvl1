@@ -7,7 +7,7 @@ use function Cli\Prompt;
 
 function calculation()
 {
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    Line('Welcome to the Brain Games!');
+    $name = Prompt('May I have your name?');
+    Line("Hello, %s!", $name);
 }
