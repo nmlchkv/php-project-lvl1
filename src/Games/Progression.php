@@ -2,8 +2,6 @@
 
 namespace Src\Games\Progression;
 
-use function Cli\Line;
-use function Cli\Prompt;
 use function Src\Engine\Execution;
 
 function calculation()
