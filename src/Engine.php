@@ -5,7 +5,7 @@ namespace Src\Engine;
 use function Cli\Line;
 use function Cli\Prompt;
 
-function Execution(array $array, string $question, array $arrayRand)
+function execution(array $array, string $question, array $arrayRand)
 {
     Line('Welcome to the Brain Games!');
     $name = Prompt('May I have your name?');

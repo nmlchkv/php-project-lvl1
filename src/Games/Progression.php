@@ -4,7 +4,7 @@ namespace Src\Games\Progression;
 
 use function Src\Engine\Execution;
 
-function Calculation()
+function calculation()
 {
     $question = ('What number is missing in the progression?');
     $arrayRand = [];
@@ -20,7 +20,7 @@ function Calculation()
         $array[] = [$number];
         $arrayRand[] = [$randStr];
     }
-    $logic = Execution($array, $question, $arrayRand);
+    $logic = execution($array, $question, $arrayRand);
     return $logic;
 }
 function progression(array $result1)

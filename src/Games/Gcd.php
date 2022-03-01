@@ -4,7 +4,7 @@ namespace Src\Games\Gcd;
 
 use function Src\Engine\Execution;
 
-function Calculation()
+function calculation()
 {
     $question = ('Find the greatest common divisor of given numbers.');
     $arrayRand = [];
@@ -16,7 +16,7 @@ function Calculation()
         $num = gcd($num1, $num2);
         $arrayRand[] = [$num];
     }
-    $logic = Execution($array, $question, $arrayRand);
+    $logic = execution($array, $question, $arrayRand);
     return $logic;
 }
 
