@@ -14,7 +14,7 @@
             "php\\project\\lvl1\\": "bin",
             "php\\project\\lvl1\\": "src/Games"
         },
-            "files": [ 
+            "files": [
                 "src/Cli.php",
                 "src/Engine.php",
                 "src/Games/Calc.php",
