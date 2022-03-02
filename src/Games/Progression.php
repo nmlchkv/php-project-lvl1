@@ -8,7 +8,6 @@ function calculation()
 {
     $question = ('What number is missing in the progression?');
     $data = [];
-    $array = [];
     $result = [];
     for ($i = 0; $i <= 2; $i++) {
         $arr = progression($result);
@@ -17,7 +16,7 @@ function calculation()
         $index = rand(0, $count);
         $randStr = $arr[$index];
         $number = str_replace([$randStr], '..', $str);
-        $array[] = [$number];
+        $result[] = [$number];
         $data[] = [$randStr];
     }
     $logic = execution($array, $question, $data);

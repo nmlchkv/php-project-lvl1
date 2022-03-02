@@ -8,16 +8,16 @@ function calculation()
 {
     $question = ('Answer "yes" if the number is even, otherwise answer "no".');
     $data = [];
-    $array = [];
+    $result = [];
     for ($i = 0; $i <= 2; $i++) {
         $num = rand(1, 15);
-        $array[] = [$num];
+        $result[] = [$num];
         if ($num % 2 === 0) {
             $data[] = ['yes'];
         } else {
             $data[] = ['no'];
         }
     }
-    $logic = execution($array, $question, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }

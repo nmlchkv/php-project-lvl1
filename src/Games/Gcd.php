@@ -8,15 +8,15 @@ function calculation()
 {
     $question = ('Find the greatest common divisor of given numbers.');
     $data = [];
-    $array = [];
+    $result = [];
     for ($i = 0; $i <= 2; $i++) {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $array[] = ["$num1 $num2"];
+        $result[] = ["$num1 $num2"];
         $num = gcd($num1, $num2);
         $data[] = [$num];
     }
-    $logic = execution($array, $question, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }
 

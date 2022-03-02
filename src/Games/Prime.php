@@ -8,17 +8,17 @@ function calculation()
 {
     $question = ('Answer "yes" if given number is prime. Otherwise answer "no".');
     $data = [];
-    $array = [];
+    $result = [];
     for ($i = 0; $i <= 2; $i++) {
         $num = rand(1, 100);
-        $array[] = [$num];
+        $result[] = [$num];
         if (is_prime($num) === true) {
             $data[] = ['yes'];
         } else {
             $data[] = ['no'];
         }
     }
-    $logic = execution($array, $question, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }
 function is_prime(int $num)
