@@ -7,17 +7,17 @@ use function Src\Engine\Execution;
 function runGame()
 {
     $arrayRand = [];
-    $array = [];
+    $result = [];
     for ($i = 0; $i <= 2; $i++) {
-        $arrayOperator = ['-', '+', '*'];
+        $operators = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
-        $operator = $arrayOperator[$keyOperator];
+        $operator = $operators[$keyOperator];
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $array[] = [$num1 . ' ' . $operator . ' ' . $num2];
+        $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $arrayRand[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = execution($array, $question, $arrayRand);
+    $logic = execution($result, $arrayRand);
     return $logic;
 }
 
