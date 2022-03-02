@@ -3,6 +3,7 @@
 namespace Src\Games\Calc;
 
 use function Src\Engine\Execution;
+use function Cli\Line;
 
 function runGame()
 {
@@ -17,6 +18,7 @@ function runGame()
         $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $arrayRand[] = [getNumber($operator, $num1, $num2)];
     }
+    Line('What is the result of the expression?');
     $logic = execution($result, $arrayRand);
     return $logic;
 }
