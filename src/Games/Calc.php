@@ -7,6 +7,7 @@ use function Cli\Line;
 
 function runGame()
 {
+    $question = ('What is the result of the expression?');
     $arrayRand = [];
     $result = [];
     for ($i = 0; $i <= 2; $i++) {
@@ -18,7 +19,7 @@ function runGame()
         $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $arrayRand[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = execution($result, $arrayRand);
+    $logic = execution($result, $question, $arrayRand);
     return $logic;
 }
 
