@@ -4,7 +4,7 @@ namespace Src\Games\Calc;
 
 use function Src\Engine\Execution;
 
-function calculation()
+function runGame()
 {
     $question = ('What is the result of the expression?');
     $arrayRand = [];
