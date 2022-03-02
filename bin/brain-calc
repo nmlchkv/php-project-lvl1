@@ -12,5 +12,5 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-
+line('What is the result of the expression?');
 runGame();

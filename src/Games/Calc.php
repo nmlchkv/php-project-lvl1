@@ -6,7 +6,6 @@ use function Src\Engine\Execution;
 
 function runGame()
 {
-    $question = ('What is the result of the expression?');
     $arrayRand = [];
     $array = [];
     for ($i = 0; $i <= 2; $i++) {
