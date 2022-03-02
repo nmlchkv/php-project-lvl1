@@ -7,16 +7,16 @@ use function Src\Engine\Execution;
 function calculation()
 {
     $question = ('Find the greatest common divisor of given numbers.');
-    $arrayRand = [];
+    $data = [];
     $array = [];
     for ($i = 0; $i <= 2; $i++) {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $array[] = ["$num1 $num2"];
         $num = gcd($num1, $num2);
-        $arrayRand[] = [$num];
+        $data[] = [$num];
     }
-    $logic = execution($array, $question, $arrayRand);
+    $logic = execution($array, $question, $data);
     return $logic;
 }
 

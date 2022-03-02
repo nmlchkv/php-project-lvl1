@@ -7,18 +7,18 @@ use function Src\Engine\Execution;
 function calculation()
 {
     $question = ('Answer "yes" if given number is prime. Otherwise answer "no".');
-    $arrayRand = [];
+    $data = [];
     $array = [];
     for ($i = 0; $i <= 2; $i++) {
         $num = rand(1, 100);
         $array[] = [$num];
         if (is_prime($num) === true) {
-            $arrayRand[] = ['yes'];
+            $data[] = ['yes'];
         } else {
-            $arrayRand[] = ['no'];
+            $data[] = ['no'];
         }
     }
-    $logic = execution($array, $question, $arrayRand);
+    $logic = execution($array, $question, $data);
     return $logic;
 }
 function is_prime(int $num)
