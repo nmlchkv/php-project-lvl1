@@ -5,14 +5,14 @@ namespace Src\Engine;
 use function Cli\Line;
 use function Cli\Prompt;
 
-function execution(array $array, string $question, array $data)
+function execution(array $result, string $question, array $data)
 {
     Line('Welcome to the Brain Games!');
     $name = Prompt('May I have your name?');
     Line("Hello, %s!", $name);
     Line($question);
-    for ($i = 0; $i <= count($array) - 1; $i++) {
-        $str = implode(' ', $array[$i]);
+    for ($i = 0; $i <= count($result) - 1; $i++) {
+        $str = implode(' ', $$result[$i]);
         $strRand = implode(' ', $data[$i]);
         Line('Question: ' . $str);
         $answer = Prompt('Your answer');
