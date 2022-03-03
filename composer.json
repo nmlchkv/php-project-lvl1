@@ -9,8 +9,7 @@
                 "bin/brain-prime"
         ],
         "autoload": {
-           
-            "files": [
+        "files": [
                 "src/Cli.php",
                 "src/Engine.php",
                 "src/Games/Calc.php",
