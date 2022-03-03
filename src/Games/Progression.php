@@ -9,15 +9,15 @@ function runGame()
     $question = ('What number is missing in the progression?');
     $data = [];
     $result = [];
-    $array = [];
+    $arr = [];
     for ($i = 0; $i <= 2; $i++) {
-        $arr = progression($result);
-        $str = implode(' ', $arr);
-        $count = count($arr) - 1;
+        $progression = progression($result);
+        $str = implode(' ', $progression);
+        $count = count($progression) - 1;
         $index = rand(0, $count);
-        $randStr = $arr[$index];
+        $randStr = $progression[$index];
         $number = str_replace([$randStr], '..', $str);
-        $array[] = [$number];
+        $arr[] = [$number];
         $data[] = [$randStr];
     }
     $logic = execution($array, $question, $data);
