@@ -18,6 +18,6 @@ function runGame()
             $data[] = ['no'];
         }
     }
-    $logic = execution($result, $question, $data);
+    $logic = Execution($result, $question, $data);
     return $logic;
 }

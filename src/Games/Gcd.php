@@ -16,7 +16,7 @@ function runGame()
         $num = gcd($num1, $num2);
         $data[] = [$num];
     }
-    $logic = execution($result, $question, $data);
+    $logic = Execution($result, $question, $data);
     return $logic;
 }
 

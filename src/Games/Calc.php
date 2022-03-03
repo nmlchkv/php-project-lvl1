@@ -18,7 +18,7 @@ function runGame()
         $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $data[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = execution($result, $question, $data);
+    $logic = Execution($result, $question, $data);
     return $logic;
 }
 

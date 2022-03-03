@@ -18,7 +18,7 @@ function runGame()
             $data[] = ['no'];
         }
     }
-    $logic = execution($result, $question, $data);
+    $logic = Execution($result, $question, $data);
     return $logic;
 }
 function is_prime(int $num)
