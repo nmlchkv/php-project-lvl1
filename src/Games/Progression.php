@@ -20,7 +20,7 @@ function runGame()
         $arr[] = [$number];
         $data[] = [$randStr];
     }
-    $logic = execution($array, $question, $data);
+    $logic = execution($arr, $question, $data);
     return $logic;
 }
 function progression(array $result)
