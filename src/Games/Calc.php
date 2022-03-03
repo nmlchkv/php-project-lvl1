@@ -3,7 +3,6 @@
 namespace Src\Games\Calc;
 
 use function Src\Engine\Execution;
-use function Cli\Line;
 
 function runGame()
 {

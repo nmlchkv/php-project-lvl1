@@ -4,7 +4,7 @@ namespace Src\Games\Prime;
 
 use function Src\Engine\Execution;
 
-function calculation()
+function runGame()
 {
     $question = ('Answer "yes" if given number is prime. Otherwise answer "no".');
     $data = [];
