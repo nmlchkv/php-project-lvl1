@@ -12,8 +12,7 @@ function runGame()
     $data = [];
     $result = [];
     $arr = [];
-    $rounds = ROUNDS_COUNT;
-    for ($i = 0; $i <= $rounds; $i++) {
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $progression = progression($result);
         $str = implode(' ', $progression);
         $count = count($progression) - 1;
