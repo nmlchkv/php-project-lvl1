@@ -4,12 +4,14 @@ namespace Src\Games\Gcd;
 
 use function Src\Engine\execution;
 
+use const Src\Engine\ROUNDS_COUNT;
+
 function runGame()
 {
     $question = ('Find the greatest common divisor of given numbers.');
     $data = [];
     $result = [];
-    for ($i = 0; $i <= 2; $i++) {
+    for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $result[] = ["$num1 $num2"];

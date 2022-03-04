@@ -4,12 +4,14 @@ namespace Src\Games\Calc;
 
 use function Src\Engine\execution;
 
+use const Src\Engine\ROUNDS_COUNT;
+
 function runGame()
 {
     $question = ('What is the result of the expression?');
     $data = [];
     $result = [];
-    for ($i = 0; $i <= 2; $i++) {
+    for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
         $operator = $operators[$keyOperator];

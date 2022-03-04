@@ -4,12 +4,14 @@ namespace Src\Games\Prime;
 
 use function Src\Engine\execution;
 
+use const Src\Engine\ROUNDS_COUNT;
+
 function runGame()
 {
     $question = ('Answer "yes" if given number is prime. Otherwise answer "no".');
     $data = [];
     $result = [];
-    for ($i = 0; $i <= 2; $i++) {
+    for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
         $result[] = [$num];
         if (is_prime($num) === true) {
