@@ -4,14 +4,15 @@ namespace Src\Engine;
 
 use function Cli\Line;
 use function Cli\Prompt;
+use const Src\Games\Progression\QUESTION;
 
 const ROUNDS_COUNT = 2;
-function execution(array $result, string $question, array $data)
+function execution(array $result, array $data)
 {
     Line('Welcome to the Brain Games!');
     $name = Prompt('May I have your name?');
     Line("Hello, %s!", $name);
-    Line($question);
+    Line(QUESTION);
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $str = implode(' ', $result[$i]);
         $strRand = implode(' ', $data[$i]);
