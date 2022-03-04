@@ -4,7 +4,7 @@ namespace Src\Games\Progression;
 
 use function Src\Engine\execution;
 
-use const Brain\Engine\ROUNDS_COUNT;
+use const Src\Engine\ROUNDS_COUNT;
 
 function runGame()
 {
