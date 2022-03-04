@@ -6,9 +6,9 @@ use function Src\Engine\execution;
 
 use const Src\Engine\ROUNDS_COUNT;
 
+const QUESTION = ('What is the result of the expression?');
 function runGame()
 {
-    $question = ('What is the result of the expression?');
     $data = [];
     $result = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
@@ -20,7 +20,7 @@ function runGame()
         $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $data[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = execution($result, $question, $data);
+    $logic = execution($result, $data);
     return $logic;
 }
 

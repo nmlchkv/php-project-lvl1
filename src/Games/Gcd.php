@@ -6,9 +6,9 @@ use function Src\Engine\execution;
 
 use const Src\Engine\ROUNDS_COUNT;
 
+const QUESTION = ('Find the greatest common divisor of given numbers.');
 function runGame()
 {
-    $question = ('Find the greatest common divisor of given numbers.');
     $data = [];
     $result = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
@@ -18,7 +18,7 @@ function runGame()
         $num = gcd($num1, $num2);
         $data[] = [$num];
     }
-    $logic = execution($result, $question, $data);
+    $logic = execution($result, $data);
     return $logic;
 }
 

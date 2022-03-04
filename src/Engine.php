@@ -4,6 +4,9 @@ namespace Src\Engine;
 
 use function Cli\Line;
 use function Cli\Prompt;
+use const Src\Games\Calc\QUESTION;
+use const Src\Games\Even\QUESTION;
+use const Src\Games\Prime\QUESTION;
 use const Src\Games\Progression\QUESTION;
 
 const ROUNDS_COUNT = 2;
