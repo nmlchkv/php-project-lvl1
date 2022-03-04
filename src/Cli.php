@@ -2,12 +2,12 @@
 
 namespace Src\Cli;
 
-use function Cli\Line;
-use function Cli\Prompt;
+use function cli\line;
+use function cli\prompt;
 
 function runGame()
 {
-    Line('Welcome to the Brain Games!');
-    $name = Prompt('May I have your name?');
-    Line("Hello, %s!", $name);
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
 }

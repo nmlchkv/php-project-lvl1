@@ -2,27 +2,27 @@
 
 namespace Src\Engine;
 
-use function Cli\Line;
-use function Cli\Prompt;
+use function cli\line;
+use function cli\prompt;
 
 const ROUNDS_COUNT = 2;
 function execution(array $result, string $question, array $data)
 {
-    Line('Welcome to the Brain Games!');
-    $name = Prompt('May I have your name?');
-    Line("Hello, %s!", $name);
-    Line($question);
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    line($question);
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $str = implode(' ', $result[$i]);
         $strRand = implode(' ', $data[$i]);
-        Line('Question: ' . $str);
-        $answer = Prompt('Your answer');
+        line('Question: ' . $str);
+        $answer = prompt('Your answer');
         if ($strRand == $answer) {
-            Line('Correct!');
+            line('Correct!');
         } else {
-            return (Line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
+            return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$strRand}'.
             Let's try again, $name!"));
         }
     }
-        Line("Congratulations, $name!");
+        line("Congratulations, $name!");
 }
