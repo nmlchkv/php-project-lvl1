@@ -2,7 +2,7 @@
 
 namespace Src\Games\Progression;
 
-use function Src\Engine\Execution;
+use function Src\Engine\execution;
 
 function runGame()
 {
@@ -20,7 +20,7 @@ function runGame()
         $arr[] = [$number];
         $data[] = [$randStr];
     }
-    $logic = Execution($arr, $question, $data);
+    $logic = execution($arr, $question, $data);
     return $logic;
 }
 function progression(array $result)

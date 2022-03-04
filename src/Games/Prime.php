@@ -2,7 +2,7 @@
 
 namespace Src\Games\Prime;
 
-use function Src\Engine\Execution;
+use function Src\Engine\execution;
 
 function runGame()
 {
@@ -18,7 +18,7 @@ function runGame()
             $data[] = ['no'];
         }
     }
-    $logic = Execution($result, $question, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }
 function is_prime(int $num)

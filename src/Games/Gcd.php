@@ -2,7 +2,7 @@
 
 namespace Src\Games\Gcd;
 
-use function Src\Engine\Execution;
+use function Src\Engine\execution;
 
 function runGame()
 {
@@ -16,7 +16,7 @@ function runGame()
         $num = gcd($num1, $num2);
         $data[] = [$num];
     }
-    $logic = Execution($result, $question, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }
 

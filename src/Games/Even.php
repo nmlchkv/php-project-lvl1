@@ -2,7 +2,7 @@
 
 namespace Src\Games\Even;
 
-use function Src\Engine\Execution;
+use function Src\Engine\execution;
 
 function runGame()
 {
@@ -18,6 +18,6 @@ function runGame()
             $data[] = ['no'];
         }
     }
-    $logic = Execution($result, $question, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }

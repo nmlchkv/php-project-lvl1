@@ -2,7 +2,7 @@
 
 namespace Src\Games\Calc;
 
-use function Src\Engine\Execution;
+use function Src\Engine\execution;
 
 function runGame()
 {
@@ -18,7 +18,7 @@ function runGame()
         $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $data[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = Execution($result, $question, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }
 
