@@ -5,7 +5,7 @@
 [![PHP CI](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml/badge.svg)](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml)
 <br>Brain Games Install:</br>
  - git clone git@github.com:itaopro/php-project-lvl1.git
- - make composer
+ - make install
 <br>Start game:</br>
  - make brain-even
   <br>or</br> 
