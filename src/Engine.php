@@ -12,7 +12,7 @@ function execution(array $result, string $question, array $data)
     $name = Prompt('May I have your name?');
     Line("Hello, %s!", $name);
     Line($question);
-    for ($i = 0; $i <= count($result) - 1; $i++) {
+    for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $str = implode(' ', $result[$i]);
         $strRand = implode(' ', $data[$i]);
         Line('Question: ' . $str);
