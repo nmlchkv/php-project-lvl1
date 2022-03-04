@@ -6,11 +6,12 @@ use function Src\Engine\execution;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const QUESTION = ('What is the result of the expression?');
+const QUESTION_CALC = ('What is the result of the expression?');
 function runGame()
 {
     $data = [];
     $result = [];
+    $question = QUESTION_CALC;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
@@ -20,7 +21,7 @@ function runGame()
         $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $data[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = execution($result, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }
 

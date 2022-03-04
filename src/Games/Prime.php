@@ -6,11 +6,12 @@ use function Src\Engine\execution;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const QUESTION = ('Answer "yes" if given number is prime. Otherwise answer "no".');
+const QUESTION_CALC = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 function runGame()
 {
     $data = [];
     $result = [];
+    $question = QUESTION_CALC;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
         $result[] = [$num];
@@ -20,7 +21,7 @@ function runGame()
             $data[] = ['no'];
         }
     }
-    $logic = execution($result, $data);
+    $logic = execution($result, $question, $data);
     return $logic;
 }
 function is_prime(int $num)
