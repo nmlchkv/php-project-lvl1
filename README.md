@@ -4,8 +4,8 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/itaopro/php-project-lvl1/code)
 [![PHP CI](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml/badge.svg)](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml)
 <br>Brain Games Install:</br>
- - gh repo clone itaopro/php-project-lvl1
- - make composer
+ - git clone git@github.com:itaopro/php-project-lvl1.git
+ - make install
 <br>Start game:</br>
  - make brain-even
   <br>or</br> 
