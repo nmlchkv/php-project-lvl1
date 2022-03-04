@@ -5,6 +5,7 @@ namespace Src\Engine;
 use function Cli\Line;
 use function Cli\Prompt;
 
+const ROUNDS_COUNT = 3;
 function execution(array $result, string $question, array $data)
 {
     Line('Welcome to the Brain Games!');
