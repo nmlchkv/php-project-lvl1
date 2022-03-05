@@ -21,6 +21,7 @@ function runGame()
             $correctAnswer[] = ['no'];
         }
     }
-    $logic = execution($question, $startQuestion, $correctAnswer);
+    $questionsAnswers = [$question, $correctAnswer];
+    $logic = execution($startQuestion, $questionsAnswers);
     return $logic;
 }
