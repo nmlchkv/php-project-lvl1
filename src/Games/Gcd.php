@@ -19,7 +19,8 @@ function runGame()
         $num = gcd($num1, $num2);
         $correctAnswer[] = [$num];
     }
-    $logic = execution($question, $startQuestion, $correctAnswer);
+    $questionsAnswers = [$question, $correctAnswer];
+    $logic = execution($startQuestion, $questionsAnswers);
     return $logic;
 }
 

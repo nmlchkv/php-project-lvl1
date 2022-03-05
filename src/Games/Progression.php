@@ -22,7 +22,8 @@ function runGame()
         $question[] = [$number];
         $correctAnswer[] = [$valueProgression];
     }
-    $logic = execution($question, $startQuestion, $correctAnswer);
+    $questionsAnswers = [$question, $correctAnswer];
+    $logic = execution($startQuestion, $questionsAnswers);
     return $logic;
 }
 function progression(array $result)
