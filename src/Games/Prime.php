@@ -7,7 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_PRIME = ('Answer "yes" if given number is prime. Otherwise answer "no".');
-function runGame()
+function runGame(): string
 {
     $correctAnswer = [];
     $question = [];
@@ -24,7 +24,7 @@ function runGame()
     $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
-function is_prime(int $num)
+function is_prime(int $num): bool
 {
     for ($i = 2; $i <= sqrt($num); $i++) {
         if ($num % $i == 0) {

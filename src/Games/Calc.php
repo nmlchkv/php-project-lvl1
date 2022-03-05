@@ -7,7 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_CALC = ('What is the result of the expression?');
-function runGame()
+function runGame(): string
 {
     $correctAnswer = [];
     $question = [];
@@ -25,7 +25,7 @@ function runGame()
     return $logic;
 }
 
-function calculate(string $operator, int $num1, int $num2)
+function calculate(string $operator, int $num1, int $num2): int
 {
     switch ($operator) {
         case '+':

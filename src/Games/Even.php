@@ -7,7 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_EVEN = ('Answer "yes" if the number is even, otherwise answer "no".');
-function runGame()
+function runGame(): string
 {
     $correctAnswer = [];
     $question = [];
