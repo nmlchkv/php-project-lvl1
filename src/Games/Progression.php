@@ -16,10 +16,11 @@ function runGame()
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = progression($result);
         $str = implode(' ', $progression);
-        $keyProgression = array_rand($progression);
-        $number = str_replace([$progression[$keyProgression]], '..', $str);
+        $randStr = array_rand($progression);
+        $valueProgression = $progression[$randStr];
+        $number = str_replace([$valueProgression], '..', $str);
         $question[] = [$number];
-        $correctAnswer[] = [$randStr];
+        $correctAnswer[] = [$valueProgression];
     }
     $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
