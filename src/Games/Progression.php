@@ -7,7 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_PROGRESSION = ('What number is missing in the progression?');
-function runGame(): string
+function runGame()
 {
     $correctAnswer = [];
     $result = [];

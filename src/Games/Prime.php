@@ -7,7 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_PRIME = ('Answer "yes" if given number is prime. Otherwise answer "no".');
-function runGame(): string
+function runGame()
 {
     $correctAnswer = [];
     $question = [];

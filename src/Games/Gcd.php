@@ -7,7 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_GCD = ('Find the greatest common divisor of given numbers.');
-function runGame(): string
+function runGame()
 {
     $correctAnswer = [];
     $question = [];
