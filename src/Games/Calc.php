@@ -7,6 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_CALC = ('What is the result of the expression?');
+const OPERATORS = ['-', '+', '*'];
 function runGame()
 {
     $correctAnswer = [];
@@ -15,7 +16,7 @@ function runGame()
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
+        $question[] = [$num1 . ' ' . OPERATORS . ' ' . $num2];
         $correctAnswer[] = [calculate($num1, $num2)];
     }
     $logic = execution($question, $startQuestion, $correctAnswer);
@@ -24,8 +25,7 @@ function runGame()
 
 function calculate(int $num1, int $num2)
 {
-    $operators = ['-', '+', '*'];
-    $operator = array_rand($operators);
+    $operator = array_rand(OPERATORS);
     switch ($operator) {
         case '+':
             return ($num1 + $num2);
