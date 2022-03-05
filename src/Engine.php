@@ -6,13 +6,15 @@ use function cli\line;
 use function cli\prompt;
 
 const ROUNDS_COUNT = 2;
-function execution(array $question, string $startQuestion, array $correctAnswer)
+function execution(string $startQuestion, array $questionsAnswers)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line($startQuestion);
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
+        $question = $questionsAnswers[0];
+        $correctAnswer = $questionsAnswers[1];
         $str = implode(' ', $question[$i]);
         $strRand = implode(' ', $correctAnswer[$i]);
         line('Question: ' . $str);
