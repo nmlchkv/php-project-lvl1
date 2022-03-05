@@ -11,10 +11,10 @@ function execution(array $question, string $startQuestion, array $correctAnswer)
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line($question);
+    line($startQuestion);
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
-        $str = implode(' ', $result[$i]);
-        $strRand = implode(' ', $data[$i]);
+        $str = implode(' ', $question[$i]);
+        $strRand = implode(' ', $correctAnswer[$i]);
         line('Question: ' . $str);
         $answer = prompt('Your answer');
         if ($strRand == $answer) {
