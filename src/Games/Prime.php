@@ -9,19 +9,19 @@ use const Src\Engine\ROUNDS_COUNT;
 const DESCRIPTION_PRIME = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 function runGame()
 {
-    $data = [];
-    $result = [];
-    $question = DESCRIPTION_PRIME;
+    $correctAnswer = [];
+    $question = [];
+    $startQuestion = DESCRIPTION_PRIME;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
-        $result[] = [$num];
+        $question[] = [$num];
         if (is_prime($num) === true) {
-            $data[] = ['yes'];
+            $correctAnswer[] = ['yes'];
         } else {
-            $data[] = ['no'];
+            $correctAnswer[] = ['no'];
         }
     }
-    $logic = execution($result, $question, $data);
+    $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
 function is_prime(int $num)

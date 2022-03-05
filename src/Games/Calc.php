@@ -9,19 +9,19 @@ use const Src\Engine\ROUNDS_COUNT;
 const DESCRIPTION_CALC = ('What is the result of the expression?');
 function runGame()
 {
-    $data = [];
-    $result = [];
-    $question = DESCRIPTION_CALC;
+    $correctAnswer = [];
+    $question = [];
+    $startQuestion = DESCRIPTION_CALC;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
         $keyOperator = rand(0, 2);
         $operator = $operators[$keyOperator];
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $result[] = [$num1 . ' ' . $operator . ' ' . $num2];
-        $data[] = [getNumber($operator, $num1, $num2)];
+        $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
+        $correctAnswer[] = [getNumber($operator, $num1, $num2)];
     }
-    $logic = execution($result, $question, $data);
+    $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
 

@@ -9,10 +9,10 @@ use const Src\Engine\ROUNDS_COUNT;
 const DESCRIPTION_PROGRESSION = ('What number is missing in the progression?');
 function runGame()
 {
-    $data = [];
+    $correctAnswer = [];
     $result = [];
-    $arr = [];
-    $question = DESCRIPTION_PROGRESSION;
+    $question = [];
+    $startQuestion = DESCRIPTION_PROGRESSION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = progression($result);
         $str = implode(' ', $progression);
@@ -20,10 +20,10 @@ function runGame()
         $index = rand(0, $count);
         $randStr = $progression[$index];
         $number = str_replace([$randStr], '..', $str);
-        $arr[] = [$number];
-        $data[] = [$randStr];
+        $question[] = [$number];
+        $correctAnswer[] = [$randStr];
     }
-    $logic = execution($arr, $question, $data);
+    $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
 function progression(array $result)

@@ -9,18 +9,18 @@ use const Src\Engine\ROUNDS_COUNT;
 const DESCRIPTION_EVEN = ('Answer "yes" if the number is even, otherwise answer "no".');
 function runGame()
 {
-    $data = [];
-    $result = [];
-    $question = DESCRIPTION_EVEN ;
+    $correctAnswer = [];
+    $question = [];
+    $startQuestion = DESCRIPTION_EVEN ;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 15);
-        $result[] = [$num];
+        $question[] = [$num];
         if ($num % 2 === 0) {
-            $data[] = ['yes'];
+            $correctAnswer[] = ['yes'];
         } else {
-            $data[] = ['no'];
+            $correctAnswer[] = ['no'];
         }
     }
-    $logic = execution($result, $question, $data);
+    $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }

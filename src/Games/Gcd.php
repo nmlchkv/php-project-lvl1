@@ -9,17 +9,17 @@ use const Src\Engine\ROUNDS_COUNT;
 const DESCRIPTION_GCD = ('Find the greatest common divisor of given numbers.');
 function runGame()
 {
-    $data = [];
-    $result = [];
-    $question = DESCRIPTION_GCD;
+    $correctAnswer = [];
+    $question = [];
+    $startQuestion = DESCRIPTION_GCD;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $result[] = ["$num1 $num2"];
+        $question[] = ["$num1 $num2"];
         $num = gcd($num1, $num2);
-        $data[] = [$num];
+        $correctAnswer[] = [$num];
     }
-    $logic = execution($result, $question, $data);
+    $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
 
