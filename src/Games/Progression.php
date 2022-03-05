@@ -6,13 +6,13 @@ use function Src\Engine\execution;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const QUESTION_PROGRESSION = ('What number is missing in the progression?');
+const DESCRIPTION_PROGRESSION = ('What number is missing in the progression?');
 function runGame()
 {
     $data = [];
     $result = [];
     $arr = [];
-    $question = QUESTION_PROGRESSION;
+    $question = DESCRIPTION_PROGRESSION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = progression($result);
         $str = implode(' ', $progression);

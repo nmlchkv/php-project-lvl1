@@ -7,12 +7,12 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 use const Src\Games\Gcd\QUESTION_GCD;
 
-const QUESTION_EVEN = ('Answer "yes" if the number is even, otherwise answer "no".');
+const DESCRIPTION_EVEN = ('Answer "yes" if the number is even, otherwise answer "no".');
 function runGame()
 {
     $data = [];
     $result = [];
-    $question = QUESTION_GCD;
+    $question = DESCRIPTION_GCD;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 15);
         $result[] = [$num];
