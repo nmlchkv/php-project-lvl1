@@ -25,7 +25,7 @@ function runGame()
     $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
-function progression(array $result): array
+function progression(array $result)
 {
     $randNumber = rand(100, 200);
     $randDiv = rand(6, 8);
