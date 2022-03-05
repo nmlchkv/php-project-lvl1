@@ -20,8 +20,8 @@ function runGame()
         $num2 = rand(1, 10);
         $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $correctAnswer[] = [calculate($operator, $num1, $num2)];
-        $questionsAnswers = [$question, $correctAnswer];
     }
+    $questionsAnswers = [$question, $correctAnswer];
     $logic = execution($startQuestion, $questionsAnswers);
     return $logic;
 }
