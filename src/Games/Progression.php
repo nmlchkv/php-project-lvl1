@@ -15,6 +15,7 @@ function runGame()
     $startQuestion = DESCRIPTION_PROGRESSION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = progression($result);
+        $str = implode(' ', $progression);
         $randStr = array_rand($progression);
         $number = str_replace([$randStr], '..', $str);
         $question[] = [$number];
