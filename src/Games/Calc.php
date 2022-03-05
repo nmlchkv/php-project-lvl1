@@ -18,13 +18,13 @@ function runGame()
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
-        $correctAnswer[] = [getNumber($operator, $num1, $num2)];
+        $correctAnswer[] = [calculate($operator, $num1, $num2)];
     }
     $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
 
-function getNumber(string $operator, int $num1, int $num2)
+function calculate(string $operator, int $num1, int $num2)
 {
     switch ($operator) {
         case '+':
@@ -33,5 +33,7 @@ function getNumber(string $operator, int $num1, int $num2)
             return ($num1 * $num2);
         case '-':
             return ($num1 - $num2);
+        default:
+            return null;
     }
 }
