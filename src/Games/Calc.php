@@ -14,8 +14,7 @@ function runGame()
     $startQuestion = DESCRIPTION_CALC;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
-        $keyOperator = rand(0, 2);
-        $operator = $operators[$keyOperator];
+        $operator = array_rand($operators);
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
