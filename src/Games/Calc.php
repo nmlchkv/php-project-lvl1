@@ -7,7 +7,7 @@ use function Src\Engine\execution;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION_CALC = ('What is the result of the expression?');
-function runGame()
+function runGame(): mixed
 {
     $correctAnswer = [];
     $question = [];
