@@ -13,19 +13,19 @@ function runGame()
     $question = [];
     $startQuestion = DESCRIPTION_CALC;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
-        $operators = ['-', '+', '*'];
-        $operator = array_rand($operators);
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
-        $correctAnswer[] = [calculate($operator, $num1, $num2)];
+        $correctAnswer[] = [calculate($num1, $num2)];
     }
     $logic = execution($question, $startQuestion, $correctAnswer);
     return $logic;
 }
 
-function calculate(string $operator, int $num1, int $num2)
+function calculate(int $num1, int $num2)
 {
+    $operators = ['-', '+', '*'];
+    $operator = array_rand($operators);
     switch ($operator) {
         case '+':
             return ($num1 + $num2);
