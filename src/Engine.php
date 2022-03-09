@@ -19,7 +19,7 @@ function startGame(string $startQuestion, array $questionsAnswers)
         $roundAnswer = implode(' ', $correctAnswer[$i]);
         line('Question: ' . $roundQuestion);
         $answer = prompt('Your answer');
-        if ($strRand == $answer) {
+        if ($roundAnswer == $answer) {
             line('Correct!');
         } else {
             return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$roundAnswer}'.
