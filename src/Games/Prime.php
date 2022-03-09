@@ -2,16 +2,16 @@
 
 namespace Src\Games\Prime;
 
-use function Src\Engine\execution;
+use function Src\Engine\startGame;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const DESCRIPTION_PRIME = ('Answer "yes" if given number is prime. Otherwise answer "no".');
+const DESCRIPTION = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 function runGame()
 {
     $correctAnswer = [];
     $question = [];
-    $startQuestion = DESCRIPTION_PRIME;
+    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
         $question[] = [$num];
@@ -22,7 +22,7 @@ function runGame()
         }
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = execution($startQuestion, $questionsAnswers);
+    $logic = startGame($startQuestion, $questionsAnswers);
     return $logic;
 }
 function is_prime(int $num): bool

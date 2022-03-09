@@ -2,16 +2,16 @@
 
 namespace Src\Games\Gcd;
 
-use function Src\Engine\execution;
+use function Src\Engine\startGame;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const DESCRIPTION_GCD = ('Find the greatest common divisor of given numbers.');
+const DESCRIPTION = ('Find the greatest common divisor of given numbers.');
 function runGame()
 {
     $correctAnswer = [];
     $question = [];
-    $startQuestion = DESCRIPTION_GCD;
+    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
@@ -20,7 +20,7 @@ function runGame()
         $correctAnswer[] = [$num];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = execution($startQuestion, $questionsAnswers);
+    $logic = startGame($startQuestion, $questionsAnswers);
     return $logic;
 }
 

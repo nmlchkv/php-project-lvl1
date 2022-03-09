@@ -2,17 +2,17 @@
 
 namespace Src\Games\Progression;
 
-use function Src\Engine\execution;
+use function Src\Engine\startGame;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const DESCRIPTION_PROGRESSION = ('What number is missing in the progression?');
+const DESCRIPTION = ('What number is missing in the progression?');
 function runGame()
 {
     $correctAnswer = [];
     $result = [];
     $question = [];
-    $startQuestion = DESCRIPTION_PROGRESSION;
+    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = progression($result);
         $str = implode(' ', $progression);
@@ -23,7 +23,7 @@ function runGame()
         $correctAnswer[] = [$valueProgression];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = execution($startQuestion, $questionsAnswers);
+    $logic = startGame($startQuestion, $questionsAnswers);
     return $logic;
 }
 function progression(array $result)

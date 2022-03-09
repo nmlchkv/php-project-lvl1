@@ -2,16 +2,16 @@
 
 namespace Src\Games\Calc;
 
-use function Src\Engine\execution;
+use function Src\Engine\startGame;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const DESCRIPTION_CALC = ('What is the result of the expression?');
+const DESCRIPTION = ('What is the result of the expression?');
 function runGame()
 {
     $correctAnswer = [];
     $question = [];
-    $startQuestion = DESCRIPTION_CALC;
+    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
         $keyOperator = array_rand($operators);
@@ -22,7 +22,7 @@ function runGame()
         $correctAnswer[] = [calculate($operator, $num1, $num2)];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = execution($startQuestion, $questionsAnswers);
+    $logic = startGame($startQuestion, $questionsAnswers);
     return $logic;
 }
 

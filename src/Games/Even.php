@@ -2,16 +2,16 @@
 
 namespace Src\Games\Even;
 
-use function Src\Engine\execution;
+use function Src\Engine\startGame;
 
 use const Src\Engine\ROUNDS_COUNT;
 
-const DESCRIPTION_EVEN = ('Answer "yes" if the number is even, otherwise answer "no".');
+const DESCRIPTION = ('Answer "yes" if the number is even, otherwise answer "no".');
 function runGame()
 {
     $correctAnswer = [];
     $question = [];
-    $startQuestion = DESCRIPTION_EVEN ;
+    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 15);
         $question[] = [$num];
@@ -22,6 +22,6 @@ function runGame()
         }
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = execution($startQuestion, $questionsAnswers);
+    $logic = startGame($startQuestion, $questionsAnswers);
     return $logic;
 }
