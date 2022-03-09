@@ -12,7 +12,7 @@ function runGame()
     $correctAnswer = [];
     $question = [];
     $startQuestion = DESCRIPTION;
-    for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 15);
         $question[] = [$num];
         if ($num % 2 === 0) {
