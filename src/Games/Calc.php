@@ -9,18 +9,17 @@ use const Src\Engine\ROUNDS_COUNT;
 const DESCRIPTION = ('What is the result of the expression?');
 function generateRound(): array
 {
+    $startQuestion = DESCRIPTION;
     $gameData = [];
     for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
-        $gameData[$i] = runGames();
+        $gameData[$i] = runGame();
     }
-    $logic = startGame($gameData);
-    return $logic;
+    return startGame($startQuestion, $gameData);
 }
 function runGame()
 {
     $correctAnswer = [];
     $question = [];
-    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
         $keyOperator = array_rand($operators);
@@ -30,7 +29,8 @@ function runGame()
         $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $correctAnswer[] = [calculate($operator, $num1, $num2)];
     }
-    return ($question, $correctAnswer);
+    return [$question, $correctAnswer];
+    
 }
 
 function calculate(string $operator, int $num1, int $num2): int
