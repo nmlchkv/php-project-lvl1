@@ -7,6 +7,15 @@ use function Src\Engine\startGame;
 use const Src\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION = ('What is the result of the expression?');
+function generateRound(): array
+{
+    $gameData = [];
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
+        $gameData[$i] = runGames();
+    }
+    $logic = startGame($gameData);
+    return $logic;
+}
 function runGame()
 {
     $correctAnswer = [];
@@ -21,9 +30,7 @@ function runGame()
         $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
         $correctAnswer[] = [calculate($operator, $num1, $num2)];
     }
-    $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame($startQuestion, $questionsAnswers);
-    return $logic;
+    return ($question, $correctAnswer);
 }
 
 function calculate(string $operator, int $num1, int $num2): int
