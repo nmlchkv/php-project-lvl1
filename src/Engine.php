@@ -21,7 +21,7 @@ function startGame(string $startQuestion, array $questionsAnswers)
         $answer = prompt('Your answer');
         if ($strRand == $answer) {
             line('Correct!');
-        } else {
+        } else { 
             return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$roundAnswer}'.
             Let's try again, $name!"));
         }
