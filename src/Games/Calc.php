@@ -12,7 +12,7 @@ function runGame()
     $correctAnswer = [];
     $question = [];
     $startQuestion = DESCRIPTION;
-    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
+    for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
         $keyOperator = array_rand($operators);
         $operator = $operators[$keyOperator];
