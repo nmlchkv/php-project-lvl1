@@ -9,6 +9,7 @@ use const Src\Engine\ROUNDS_COUNT;
 const DESCRIPTION = ('What is the result of the expression?');
 function runGame()
 {
+    $gameData = [$question[], $correctAnswer[]];
     $correctAnswer = [];
     $question = [];
     $startQuestion = DESCRIPTION;
@@ -18,11 +19,11 @@ function runGame()
         $operator = $operators[$keyOperator];
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $question[] = [$num1 . ' ' . $operator . ' ' . $num2];
-        $correctAnswer[] = [calculate($operator, $num1, $num2)];
+        $gameData = $question [$num1 . ' ' . $operator . ' ' . $num2];
+        $gameData = $correctAnswer[calculate($operator, $num1, $num2)];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame($startQuestion, $questionsAnswers);
+    $logic = startGame($startQuestion, $gameData);
     return $logic;
 }
 
