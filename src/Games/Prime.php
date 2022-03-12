@@ -23,6 +23,7 @@ function runGame()
     $questionsAnswers = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $questionsAnswers));
 }
+
 function isPrime(int $num): bool
 {
     for ($i = 2; $i <= sqrt($num); $i++) {

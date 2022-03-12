@@ -13,7 +13,7 @@ function runGame()
     $result = [];
     $question = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
-        $progression = progression($result);
+        $progression = otProgression($result);
         $str = implode(' ', $progression);
         $randStr = array_rand($progression);
         $valueProgression = $progression[$randStr];
@@ -24,7 +24,8 @@ function runGame()
     $questionsAnswers = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $questionsAnswers));
 }
-function progression(array $result)
+
+function toPogression(array $result)
 {
     $randNumber = rand(100, 200);
     $randDiv = rand(6, 8);
