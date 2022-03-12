@@ -14,7 +14,7 @@ function runGame()
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
         $question[] = [$num];
-        if (is_prime($num) === true) {
+        if (isPrime($num) === true) {
             $correctAnswer[] = ['yes'];
         } else {
             $correctAnswer[] = ['no'];
@@ -24,7 +24,7 @@ function runGame()
     $logic = startGame(DESCRIPTION, $questionsAnswers);
     return $logic;
 }
-function is_prime(int $num): bool
+function isPrime(int $num): bool
 {
     for ($i = 2; $i <= sqrt($num); $i++) {
         if ($num % $i == 0) {
@@ -33,4 +33,3 @@ function is_prime(int $num): bool
     }
     return true;
 }
-// test
