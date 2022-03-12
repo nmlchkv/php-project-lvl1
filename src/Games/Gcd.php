@@ -23,7 +23,7 @@ function runGame()
     return $logic;
 }
 
-function gcd(int $num1, int $num2): int
+function toCheckDivider(int $num1, int $num2): int
 {
     if ($num2 > 0) {
         return gcd($num2, $num1 % $num2);
