@@ -16,8 +16,6 @@ function startGame(string $startQuestion, array $questionsAnswers)
         $question = $questionsAnswers[0];
         $correctAnswer = $questionsAnswers[1];
         $roundAnswer = implode(' ', $correctAnswer[$i]);
-        line('Question: ' . $roundQuestion);
-        $strRand = implode(' ', $correctAnswer[$i]);
         line('Question: ' . $question[$i]);
         $answer = prompt('Your answer');
         if ($roundAnswer == $answer) {
