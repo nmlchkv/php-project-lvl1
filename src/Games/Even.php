@@ -20,7 +20,7 @@ function runGame()
     return (startGame(DESCRIPTION, $questionsAnswers));
 }
 
-function isEven (int $num): int
+function isEven (int $num): string
 {
     if ($num % 2 === 0) {
         $correctAnswer = 'yes';
