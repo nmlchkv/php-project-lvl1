@@ -15,7 +15,7 @@ function runGame()
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $question[] = ["$num1 $num2"];
-        $num = gcd($num1, $num2);
+        $num = toCheckDivider($num1, $num2);
         $correctAnswer[] = [$num];
     }
     $questionsAnswers = [$question, $correctAnswer];
