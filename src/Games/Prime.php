@@ -11,7 +11,6 @@ function runGame()
 {
     $correctAnswer = [];
     $question = [];
-    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
         $question[] = [$num];
@@ -22,7 +21,7 @@ function runGame()
         }
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame($startQuestion, $questionsAnswers);
+    $logic = startGame(DESCRIPTION, $questionsAnswers);
     return $logic;
 }
 function is_prime(int $num): bool

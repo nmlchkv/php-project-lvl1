@@ -12,7 +12,6 @@ function runGame()
     $correctAnswer = [];
     $result = [];
     $question = [];
-    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = progression($result);
         $str = implode(' ', $progression);
@@ -23,7 +22,7 @@ function runGame()
         $correctAnswer[] = [$valueProgression];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame($startQuestion, $questionsAnswers);
+    $logic = startGame(DESCRIPTION, $questionsAnswers);
     return $logic;
 }
 function progression(array $result)

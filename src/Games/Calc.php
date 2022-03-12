@@ -11,7 +11,6 @@ function runGame()
 {
     $correctAnswer = [];
     $question = [];
-    $startQuestion = DESCRIPTION;
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $operators = ['-', '+', '*'];
         $keyOperator = array_rand($operators);
@@ -22,7 +21,7 @@ function runGame()
         $correctAnswer[] = [calculate($operator, $num1, $num2)];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame($startQuestion, $questionsAnswers);
+    $logic = startGame(DESCRIPTION, $questionsAnswers);
     return $logic;
 }
 
