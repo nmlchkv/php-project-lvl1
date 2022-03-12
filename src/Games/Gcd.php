@@ -19,8 +19,7 @@ function runGame()
         $correctAnswer[] = [$num];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame(DESCRIPTION, $questionsAnswers);
-    return $logic;
+    return (startGame(DESCRIPTION, $questionsAnswers));
 }
 
 function toCheckDivider(int $num1, int $num2): int

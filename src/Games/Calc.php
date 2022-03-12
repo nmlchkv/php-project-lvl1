@@ -21,8 +21,7 @@ function runGame()
         $correctAnswer[] = [calculate($operator, $num1, $num2)];
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame(DESCRIPTION, $questionsAnswers);
-    return $logic;
+    return (startGame(DESCRIPTION, $questionsAnswers));
 }
 
 function calculate(string $operator, int $num1, int $num2): int

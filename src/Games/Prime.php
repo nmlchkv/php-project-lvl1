@@ -21,8 +21,7 @@ function runGame()
         }
     }
     $questionsAnswers = [$question, $correctAnswer];
-    $logic = startGame(DESCRIPTION, $questionsAnswers);
-    return $logic;
+    return (startGame(DESCRIPTION, $questionsAnswers));
 }
 function isPrime(int $num): bool
 {
