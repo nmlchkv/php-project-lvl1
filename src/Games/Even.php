@@ -14,12 +14,18 @@ function runGame()
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 15);
         $question[] = [$num];
-        if ($num % 2 === 0) {
-            $correctAnswer[] = ['yes'];
-        } else {
-            $correctAnswer[] = ['no'];
-        }
+        $correctAnswer[] = isEven($num);
     }
     $questionsAnswers = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $questionsAnswers));
+}
+
+function isEven (int $num): int
+{
+    if ($num % 2 === 0) {
+        $correctAnswer = 'yes';
+    } else {
+        $correctAnswer = 'no';
+    }
+    return $correctAnswer;
 }
