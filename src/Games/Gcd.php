@@ -26,7 +26,7 @@ function runGame()
 function toCheckDivider(int $num1, int $num2): int
 {
     if ($num2 > 0) {
-        return gcd($num2, $num1 % $num2);
+        return toCheckDivider($num2, $num1 % $num2);
     } else {
         return abs($num1);
     }
