@@ -30,10 +30,9 @@ function toProgress(array $result)
     $randNumber = rand(100, 200);
     $randDiv = rand(6, 8);
     for ($i = 0; $i <= $randNumber; $i++) {
-        if ($i % $randDiv === 0) {
+        if ($i + ($randNumber - $randDiv) * $i) {
             $result[] = $i;
-        } if (count($result) === 10) {
-            return $result;
         }
     }
+    return $result;
 }
