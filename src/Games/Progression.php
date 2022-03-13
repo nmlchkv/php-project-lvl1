@@ -31,4 +31,5 @@ function makeProgression(array $result)
     for ($i = 0; $i <= 20; $i + $randNumber) {
         $result[] = $i;
     }
+    return $result;
 }
