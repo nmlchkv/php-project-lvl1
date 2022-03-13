@@ -20,7 +20,7 @@ function runGame()
         $number = str_replace([$valueProgression], '..', $str);
         $question[] = [$number];
         $correctAnswer[] = [$valueProgression];
-    } 
+    }
     $questionsAnswers = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $questionsAnswers));
 }
