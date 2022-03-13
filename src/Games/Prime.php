@@ -14,7 +14,7 @@ function runGame()
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
         $question[] = [$num];
-        if (toCheckPrime($num) === true) {
+        if (isPrime($num) === true) {
             $correctAnswer[] = ['yes'];
         } else {
             $correctAnswer[] = ['no'];
@@ -24,7 +24,7 @@ function runGame()
     return (startGame(DESCRIPTION, $questionsAnswers));
 }
 
-function toCheckPrime(int $num): bool
+function isPrime(int $num): bool
 {
     for ($i = 2; $i <= sqrt($num); $i++) {
         if ($num % $i == 0) {
