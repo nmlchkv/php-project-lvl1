@@ -31,7 +31,8 @@ function makeProgression(): array
     for ($i = 0; $i < 100; $i += $randNumber) {
         $result[] = $i;
         if (count($result) === 10) {
-            return $result;
+            break;
         }
     }
+    return $result;
 }
