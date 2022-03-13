@@ -28,9 +28,10 @@ function makeProgression(): array
 {
     $result = [];
     $randNumber = rand(2, 4);
+    $lengthProgression = rand(10, 15);
     for ($i = 0; $i < 100; $i += $randNumber) {
         $result[] = $i;
-        if (count($result) === 10) {
+        if (count($result) === $lengthProgression) {
             break;
         }
     }
