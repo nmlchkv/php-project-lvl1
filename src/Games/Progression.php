@@ -10,7 +10,6 @@ const DESCRIPTION = ('What number is missing in the progression?');
 function runGame()
 {
     $correctAnswer = [];
-    $result = [];
     $question = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = makeProgression($result);
