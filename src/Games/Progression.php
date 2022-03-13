@@ -12,7 +12,7 @@ function runGame()
     $correctAnswer = [];
     $question = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
-        $progression = makeProgression($result);
+        $progression = makeProgression();
         $str = implode(' ', $progression);
         $randStr = array_rand($progression);
         $valueProgression = $progression[$randStr];
@@ -24,7 +24,7 @@ function runGame()
     return (startGame(DESCRIPTION, $questionsAnswers));
 }
 
-function makeProgression(array $result)
+function makeProgression(): array
 {
     $result = [];
     $randNumber = rand(2, 4);
