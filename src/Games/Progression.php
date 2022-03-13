@@ -30,6 +30,6 @@ function makeProgression(array $result)
     $randNumber = rand(2, 4);
     for ($i = 0; $i <= 20; $i + $randNumber) {
         $result[] = $i;
-        return $result;
     }
+    return $result;
 }
