@@ -15,9 +15,9 @@ function runGame()
         $num = rand(1, 100);
         $question[] = [$num];
         if (isPrime($num) === true) {
-            $correctAnswer[] = 'yes';
+            $correctAnswer[] = ['yes'];
         } else {
-            $correctAnswer[] = 'no';
+            $correctAnswer[] = ['no'];
         }
     }
     $questionsAnswers = [$question, $correctAnswer];
