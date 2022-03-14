@@ -13,11 +13,11 @@ function runGame()
     $question = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
-        $question[] = [$num];
+        $question[] = $num;
         if (isPrime($num) === true) {
-            $correctAnswer[] = ['yes'];
+            $correctAnswer[] = 'yes';
         } else {
-            $correctAnswer[] = ['no'];
+            $correctAnswer[] = 'no';
         }
     }
     $questionsAnswers = [$question, $correctAnswer];

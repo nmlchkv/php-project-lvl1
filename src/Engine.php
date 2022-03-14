@@ -15,13 +15,12 @@ function startGame(string $startQuestion, array $questionsAnswers)
     for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $question = $questionsAnswers[0];
         $correctAnswer = $questionsAnswers[1];
-        $roundAnswer = implode(' ', $correctAnswer[$i]);
         line('Question: ' . $question[$i]);
         $answer = prompt('Your answer');
-        if ($roundAnswer == $answer) {
+        if ($correctAnswer[$i] == $answer) {
             line('Correct!');
         } else {
-            return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$roundAnswer}'.
+            return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer[$i]}'.
             Let's try again, $name!"));
         }
     }

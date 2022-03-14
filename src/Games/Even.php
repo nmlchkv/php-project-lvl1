@@ -13,8 +13,8 @@ function runGame()
     $question = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 15);
-        $question[] = [$num];
-        $correctAnswer[] = [isEven($num)];
+        $question[] = $num;
+        $correctAnswer[] = isEven($num);
     }
     $questionsAnswers = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $questionsAnswers));

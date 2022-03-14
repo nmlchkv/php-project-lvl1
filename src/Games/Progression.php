@@ -17,8 +17,8 @@ function runGame()
         $randStr = array_rand($progression);
         $valueProgression = $progression[$randStr];
         $number = str_replace([$valueProgression], '..', $str);
-        $question[] = [$number];
-        $correctAnswer[] = [$valueProgression];
+        $question[] = $number;
+        $correctAnswer[] = $valueProgression;
     }
     $questionsAnswers = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $questionsAnswers));
