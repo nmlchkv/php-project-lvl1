@@ -20,8 +20,9 @@ function startGame(string $startQuestion, array $questionsAnswers)
         if ($correctAnswer[$i] == $answer) {
             line('Correct!');
         } else {
-            return (line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer[$i]}'.
+            (line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer[$i]}'.
             Let's try again, $name!"));
+            return;
         }
     }
         line("Congratulations, $name!");
