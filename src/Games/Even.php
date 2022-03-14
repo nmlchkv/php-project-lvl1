@@ -24,7 +24,7 @@ function runGame()
     return (startGame(DESCRIPTION, $questionsAnswers));
 }
 
-function isEven(int $num): string
+function isEven(int $num): bool
 {
     if ($num % 2 === 0) {
         return true;
