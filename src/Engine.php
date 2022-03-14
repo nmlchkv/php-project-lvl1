@@ -15,9 +15,8 @@ function startGame(string $startQuestion, array $questionsAnswers)
     for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         $question = $questionsAnswers[0];
         $correctAnswer = $questionsAnswers[1];
-        $roundQuestion = implode(' ', $question[$i]);
         $roundAnswer = implode(' ', $correctAnswer[$i]);
-        line('Question: ' . $roundQuestion);
+        line('Question: ' . $question[$i]);
         $answer = prompt('Your answer');
         if ($roundAnswer == $answer) {
             line('Correct!');
