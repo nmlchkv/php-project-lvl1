@@ -11,10 +11,13 @@
     
   or
  - make brain-calc
+ 
   or 
  - make brain-gcd
+ 
   or
  - make brain-progression
+  
   or
  - make brain-prime
 [![brain-even](https://asciinema.org/a/d8APTa0LNITRuyqRfUhxL16xv.svg)](https://asciinema.org/a/d8APTa0LNITRuyqRfUhxL16xv)
