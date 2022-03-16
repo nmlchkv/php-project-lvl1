@@ -8,13 +8,13 @@
  - make install
   Start game:
     - make brain-even
-  <br>or</br> 
+  or
  - make brain-calc
- <br>or</br> 
+  or 
  - make brain-gcd
- <br>or</br> 
+  or
  - make brain-progression
- <br>or</br> 
+  or
  - make brain-prime
 [![brain-even](https://asciinema.org/a/d8APTa0LNITRuyqRfUhxL16xv.svg)](https://asciinema.org/a/d8APTa0LNITRuyqRfUhxL16xv)
 [![brain-calc](https://asciinema.org/a/SyXR4PFBYjUAqNoRCPJUhUAm1.svg)](https://asciinema.org/a/SyXR4PFBYjUAqNoRCPJUhUAm1)
