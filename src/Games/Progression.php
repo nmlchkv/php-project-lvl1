@@ -16,8 +16,8 @@ function runGame()
         $numbers = implode(' ', $progression);
         $randProgression = array_rand($progression);
         $valueRand = $progression[$randProgression];
-        $number = str_replace([$valueRand], '..', $numbers);
-        $question[] = $number;
+        $numberProgression = str_replace([$valueRand], '..', $numbers);
+        $question[] = $numberProgression;
         $correctAnswer[] = $valueRand;
     }
     $dataRounds = [$question, $correctAnswer];
