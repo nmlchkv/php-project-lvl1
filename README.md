@@ -6,8 +6,8 @@
 <br>Brain Games Install:</br>
  - git clone git@github.com:itaopro/php-project-lvl1.git
  - make install
-<br>Start game:</br>
- - make brain-even
+  Start game:
+    - make brain-even
   <br>or</br> 
  - make brain-calc
  <br>or</br> 
