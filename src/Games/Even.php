@@ -20,8 +20,8 @@ function runGame()
             $correctAnswer[] = 'no';
         }
     }
-    $questionsAnswers = [$question, $correctAnswer];
-    return (startGame(DESCRIPTION, $questionsAnswers));
+    $dataRounds = [$question, $correctAnswer];
+    return (startGame(DESCRIPTION, $dataRounds));
 }
 
 function isEven(int $num): bool

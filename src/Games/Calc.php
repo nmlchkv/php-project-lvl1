@@ -20,8 +20,8 @@ function runGame()
         $question[] = ("{$num1} {$operator} {$num2}");
         $correctAnswer[] = calculate($operator, $num1, $num2);
     }
-    $questionsAnswers = [$question, $correctAnswer];
-    return (startGame(DESCRIPTION, $questionsAnswers));
+    $dataRounds = [$question, $correctAnswer];
+    return (startGame(DESCRIPTION, $dataRounds));
 }
 
 function calculate(string $operator, int $num1, int $num2): int

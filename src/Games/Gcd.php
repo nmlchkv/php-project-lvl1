@@ -18,8 +18,8 @@ function runGame()
         $num = toCheckDivider($num1, $num2);
         $correctAnswer[] = $num;
     }
-    $questionsAnswers = [$question, $correctAnswer];
-    return (startGame(DESCRIPTION, $questionsAnswers));
+    $dataRounds = [$question, $correctAnswer];
+    return (startGame(DESCRIPTION, $dataRounds));
 }
 
 function toCheckDivider(int $num1, int $num2): int
