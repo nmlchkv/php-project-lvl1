@@ -13,12 +13,12 @@ function runGame()
     $question = [];
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $progression = makeProgression();
-        $str = implode(' ', $progression);
-        $randStr = array_rand($progression);
-        $valueProgression = $progression[$randStr];
-        $number = str_replace([$valueProgression], '..', $str);
+        $numbers = implode(' ', $progression);
+        $randProgression = array_rand($progression);
+        $valueRand = $progression[$randProgression];
+        $number = str_replace([$valueRand], '..', $numbers);
         $question[] = $number;
-        $correctAnswer[] = $valueProgression;
+        $correctAnswer[] = $valueRand;
     }
     $dataRounds = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $dataRounds));
