@@ -15,17 +15,17 @@ function runGame()
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $question[] = "$num1 $num2";
-        $num = toCheckDivider($num1, $num2);
+        $num = calculateGcd($num1, $num2);
         $correctAnswer[] = $num;
     }
     $dataRounds = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $dataRounds));
 }
 
-function toCheckDivider(int $num1, int $num2): int
+function calculateGcd(int $num1, int $num2): int
 {
     if ($num2 > 0) {
-        return toCheckDivider($num2, $num1 % $num2);
+        return calculateGcd($num2, $num1 % $num2);
     } else {
         return abs($num1);
     }
