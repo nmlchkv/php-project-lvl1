@@ -10,7 +10,6 @@
     - make brain-even
     
   or
-  
  - make brain-calc
   or 
  - make brain-gcd
