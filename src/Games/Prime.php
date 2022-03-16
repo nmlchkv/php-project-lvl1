@@ -14,11 +14,7 @@ function runGame()
     for ($i = 0; $i <= ROUNDS_COUNT; $i++) {
         $num = rand(1, 100);
         $question[] = $num;
-        if (isPrime($num) === true) {
-            $correctAnswer[] = 'yes';
-        } else {
-            $correctAnswer[] = 'no';
-        }
+        $correctAnswer[] = isPrime($num) ? 'yes' : 'no';
     }
     $dataRounds = [$question, $correctAnswer];
     return (startGame(DESCRIPTION, $dataRounds));
