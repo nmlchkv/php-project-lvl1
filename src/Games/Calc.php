@@ -34,6 +34,6 @@ function calculate(string $operator, int $num1, int $num2): int
         case '-':
             return ($num1 - $num2);
         default:
-            null;
+            return null;
     }
 }
