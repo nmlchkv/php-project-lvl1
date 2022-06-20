@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/itaopro/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/itaopro/php-project-lvl1/actions)
-<a href="https://codeclimate.com/github/itaopro/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/itaopro/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/d497d6cf1a605d6984b6/maintainability" /></a>
 [![PHP CI](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml/badge.svg)](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml)
  # Brain Games Install:
  - git clone git@github.com:itaopro/php-project-lvl1.git
