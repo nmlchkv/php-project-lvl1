@@ -3,7 +3,7 @@
 <a href="https://codeclimate.com/github/itaopro/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/d497d6cf1a605d6984b6/maintainability" /></a>
 [![PHP CI](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml/badge.svg)](https://github.com/itaopro/php-project-lvl1/actions/workflows/workflow.yml)
  # Brain Games Install:
- - git clone git@github.com:itaopro/php-project-lvl1.git
+ - git clone https://github.com/itaopro/php-project-lvl1.git
  - make install
  
   Start game:
