@@ -25,5 +25,5 @@ function startGame(string $startQuestion, array $dataRounds)
             return;
         }
     }
-        line("Congratulations, $name!");
+        line("Congratulations, $name!!");
 }
